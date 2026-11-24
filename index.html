@@ -1,0 +1,2589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?= htmlspecialchars($pageTitle) ?></title>
+  <meta name="description" content="<?= htmlspecialchars($pageDesc) ?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <!-- Google Fonts: Heebo (Exact font used in reference knyamed.com) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- ==========================================================
+       1. TOP PROMOTIONAL ANNOUNCEMENT BARS
+       ========================================================== -->
+  <aside class="top-announcements-wrapper" aria-label="Store Announcements">
+    <!-- Top Urgent Stock / Flash Sale Strip -->
+    <div class="announcement-bar-flash">
+      <div class="container announcement-flash-inner">
+        <span class="flash-tag">LIMITED STOCK</span>
+        <span class="flash-text">Special Launch Offer: Flat <strong>12% OFF</strong> on all Scrubs &amp; Lab Coats | Code: <strong class="coupon-code">FLASH12</strong></span>
+        <a href="#join-club" class="flash-link">Join Medico Club →</a>
+      </div>
+    </div>
+
+    <!-- Infinite Scrolling Medical USP Strip -->
+    <div class="announcement-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> Free Pan-India Delivery Above ₹1,499</span>
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> Over 1,00,000+ Indian Doctors &amp; Surgeons Trust TRADE MEDS</span>
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> Custom Doctor Name &amp; Hospital Logo Embroidery</span>
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> 7 Days Easy Doorstep Return &amp; Size Exchange</span>
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> Made with High-Density Fluid-Barrier &amp; 4-Way Stretch Tech</span>
+
+        <!-- Duplicated for seamless infinite loop -->
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> Free Pan-India Delivery Above ₹1,499</span>
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> Over 1,00,000+ Indian Doctors &amp; Surgeons Trust TRADE MEDS</span>
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> Custom Doctor Name &amp; Hospital Logo Embroidery</span>
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> 7 Days Easy Doorstep Return &amp; Size Exchange</span>
+        <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg> Made with High-Density Fluid-Barrier &amp; 4-Way Stretch Tech</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================
+       2. PRIMARY STICKY BRAND HEADER
+       ========================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-btn" onclick="window.TM.openMobileMenu()" aria-label="Open Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <!-- Brand Identity Logo -->
+      <a href="index.php" class="header-logo" title="TRADE MEDS - Engineered For Healers">
+        <img src="images/trade-meds-logo/trade-meds.png" alt="TRADE MEDS" class="header-logo-img" style="height:46px;max-height:46px;width:auto;max-width:180px;object-fit:contain;">
+      </a>
+
+      <!-- Live Interactive Predictive Search Bar -->
+      <div class="header-search" id="header-search-container">
+        <form class="search-form" id="search-form" action="category.php" method="GET" onsubmit="return window.TM.handleSearchSubmit(event)">
+          <div class="search-input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" name="search" id="live-search-input" class="search-input" 
+                   placeholder="Search for '6sense Stethoscope'..." 
+                   autocomplete="off" 
+                   oninput="window.TM.handleSearchInput(event)"
+                   onfocus="window.TM.showSearchSuggestions(true)"
+                   aria-label="Search Trade Meds Products">
+            <button type="button" class="search-clear-btn" id="search-clear-btn" onclick="window.TM.clearSearch()" style="display:none;" aria-label="Clear Search Input">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- Search Autocomplete Suggestions Popup -->
+        <div class="search-results-overlay" id="search-suggestions-box" style="display:none;">
+          <div class="search-results-list" id="search-results-list"></div>
+        </div>
+      </div>
+
+      <!-- Action Icons: Doctor Profile, Wishlist, Slide-Over Cart -->
+      <div class="header-actions">
+        <!-- Account Trigger -->
+        <div class="action-item" id="user-account-action">
+          <a href="javascript:void(0)" onclick="window.TM.handleAccountClick()" class="action-btn" title="Doctor Account">
+            <div class="action-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <span class="action-label" id="header-user-name">Hi Medico</span>
+          </a>
+        </div>
+
+        <!-- Wishlist Trigger -->
+        <div class="action-item">
+          <button type="button" class="action-btn" onclick="window.TM.openWishlistModal()" title="View Wishlist">
+            <div class="action-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+              </svg>
+              <span class="badge-count" id="wishlist-badge-count">0</span>
+            </div>
+            <span class="action-label">Wishlist</span>
+          </button>
+        </div>
+
+        <!-- Bag / Cart Slide-Over Trigger -->
+        <div class="action-item">
+          <button type="button" class="action-btn" id="header-cart-btn" onclick="window.TM.openCartDrawer()" title="Shopping Bag">
+            <div class="action-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 01-8 0"></path>
+              </svg>
+              <span class="badge-count" id="cart-badge-count">0</span>
+            </div>
+            <span class="action-label">Bag</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================
+         3. DESKTOP MAIN NAVIGATION MENU (EXACT KNYAMED REFERENCE CATEGORIES)
+         ========================================================== -->
+    <nav class="site-nav" aria-label="Main Navigation">
+      <div class="container site-nav-container">
+        <ul class="nav-list">
+          <!-- 1. WOMEN -->
+          <li class="nav-item">
+            <a href="category.php?gender=Women" class="nav-link">
+              Women
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5.5L7 9.5L3 5.5"/></svg>
+            </a>
+            <div class="mega-menu-wrapper">
+              <div class="mega-menu-container">
+                <aside class="mega-col-left">
+                  <h4 class="mega-heading">Women's Medical Attire</h4>
+                  <p>
+                    Ergonomically tailored scrubs &amp; coats designed for Indian healthcare heroes.
+                  </p>
+                  <div class="mega-quick-links">
+                    <a href="category.php?gender=Women">View All Women's Scrubs</a>
+                    <a href="category.php?cat=ecoflex-scrubs&gender=Women">ecoflex™ 4-Way Stretch</a>
+                    <a href="category.php?cat=Classic+Scrubs&gender=Women">Classic Poly-Viscose</a>
+                    <a href="category.php?cat=Lab+Coats">Doctor Aprons &amp; Lab Coats</a>
+                    <a href="category.php?cat=Underscrubs">Warm-Up Under-Scrubs</a>
+                  </div>
+                </aside>
+
+                <div class="mega-col-center" style="grid-template-columns: repeat(3, 1fr);">
+                  <!-- Col 1: Scrubs -->
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/1_36_f708815d-e636-4d70-af59-b4c8dbdc1e7d.jpg?v=1739900782&width=832" alt="Scrubs for Women" loading="lazy" style="object-fit:cover;object-position:top center;">
+                    </div>
+                    <h5 class="category-col-title">Scrubs</h5>
+                    <div class="category-col-links">
+                      <a href="product.php?id=1">Classic Women Navy V-Neck</a>
+                      <a href="product.php?id=3">Classic Women Wine V-Neck</a>
+                      <a href="product.php?id=7">ecoflex™ Women Navy</a>
+                      <a href="product.php?id=10">ecoflex™ Women Wine</a>
+                      <a href="category.php?gender=Women" style="font-weight:700;color:var(--tm-primary);">All Women Scrubs →</a>
+                    </div>
+                  </div>
+
+                  <!-- Col 2: Lab Coats -->
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/Lab_Coats_-_Aprons_a3e923c1-fb7c-4288-bf4e-b2faa2e66ef7.png?v=1784716095&width=800" alt="Lab Coats for Women" loading="lazy" style="object-fit:contain;padding:10px 14px;background:#f8fafc;">
+                    </div>
+                    <h5 class="category-col-title">Lab Coats &amp; Aprons</h5>
+                    <div class="category-col-links">
+                      <a href="product.php?id=11">Chief Labcoat (Long Sleeves)</a>
+                      <a href="product.php?id=12">Focus Labcoat (Full Sleeves)</a>
+                      <a href="category.php?cat=Lab+Coats" style="font-weight:700;color:var(--tm-primary);">Explore All Coats →</a>
+                    </div>
+                  </div>
+
+                  <!-- Col 3: Stethoscopes -->
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/1_986b919b-9e67-4d3b-9c61-194170fabb2a.png?v=1778146597&width=832" alt="Stethoscopes" loading="lazy" style="object-fit:contain;padding:10px 14px;background:#f8fafc;">
+                    </div>
+                    <h5 class="category-col-title">Stethoscopes</h5>
+                    <div class="category-col-links">
+                      <a href="product.php?id=13">6sense All Black Finish</a>
+                      <a href="product.php?id=14">6sense Lite Ward Model</a>
+                      <a href="product.php?id=15">6sense Paeds Rose Gold</a>
+                      <a href="category.php?cat=Stethoscope" style="font-weight:700;color:var(--tm-primary);">View 6sense Lineup →</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mega-col-right">
+                  <div class="mega-promo-card">
+                    <img src="https://knyamed.com/cdn/shop/files/1a3O1A8835.jpg?v=1739900851&width=832" alt="Women Promo">
+                    <div class="mega-promo-overlay">
+                      <h4 class="mega-promo-title">Classic Women Scrub</h4>
+                      <p class="mega-promo-sub">Engineered with high fluid-barrier poly blend.</p>
+                      <a href="product.php?id=1" class="mega-promo-btn">Shop Classic</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 2. MEN -->
+          <li class="nav-item">
+            <a href="category.php?gender=Men" class="nav-link">
+              Men
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5.5L7 9.5L3 5.5"/></svg>
+            </a>
+            <div class="mega-menu-wrapper">
+              <div class="mega-menu-container">
+                <aside class="mega-col-left">
+                  <h4 class="mega-heading">Men's Medical Attire</h4>
+                  <p>
+                    Athletic cuts, deep cargo pockets, and fluid repellent tech for surgery shifts.
+                  </p>
+                  <div class="mega-quick-links">
+                    <a href="category.php?gender=Men">View All Men's Scrubs</a>
+                    <a href="category.php?cat=ecoflex-scrubs&gender=Men">ecoflex™ 4-Way Stretch</a>
+                    <a href="category.php?cat=Classic+Scrubs&gender=Men">Classic Poly-Viscose</a>
+                    <a href="category.php?cat=Lab+Coats">Men's Lab Coats</a>
+                  </div>
+                </aside>
+
+                <div class="mega-col-center" style="grid-template-columns: repeat(3, 1fr);">
+                  <!-- Col 1: Men's Scrubs -->
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/11TH_MAY_KNYA-1595_2.jpg?v=1739900798&width=832" alt="Men Scrubs" loading="lazy" style="object-fit:cover;object-position:top center;">
+                    </div>
+                    <h5 class="category-col-title">Men's Scrubs</h5>
+                    <div class="category-col-links">
+                      <a href="product.php?id=2">Classic Men's V-Neck</a>
+                      <a href="product.php?id=8">ecoflex™ Men's V-Neck</a>
+                      <a href="product.php?id=4">Men's Wine Scrub Top</a>
+                      <a href="category.php?gender=Men" style="font-weight:700;color:var(--tm-primary);">All Men's Apparel →</a>
+                    </div>
+                  </div>
+
+                  <!-- Col 2: Lab Coats & Aprons -->
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/Lab_Coats_-_Aprons_cce00cd9-d297-44f4-afa4-2372a831f785.png?v=1784715729&width=800" alt="Doctor Lab Coats" loading="lazy" style="object-fit:contain;padding:10px 14px;background:#f8fafc;">
+                    </div>
+                    <h5 class="category-col-title">Lab Coats &amp; Aprons</h5>
+                    <div class="category-col-links">
+                      <a href="product.php?id=11">Chief Doctor Apron</a>
+                      <a href="product.php?id=12">Focus Consultant Coat</a>
+                      <a href="product.php?id=16">Medical Footwear &amp; Clogs</a>
+                      <a href="category.php?cat=Lab+Coats" style="font-weight:700;color:var(--tm-primary);">View Lab Coats →</a>
+                    </div>
+                  </div>
+
+                  <!-- Col 3: Stethoscopes -->
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/1_986b919b-9e67-4d3b-9c61-194170fabb2a.png?v=1778146597&width=832" alt="Stethoscopes" loading="lazy" style="object-fit:contain;padding:10px 14px;background:#f8fafc;">
+                    </div>
+                    <h5 class="category-col-title">Stethoscopes</h5>
+                    <div class="category-col-links">
+                      <a href="product.php?id=13">6sense All Black</a>
+                      <a href="product.php?id=14">6sense Lite</a>
+                      <a href="product.php?id=15">6sense Paeds</a>
+                      <a href="category.php?cat=Stethoscope" style="font-weight:700;color:var(--tm-primary);">Explore All Stethoscopes →</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mega-col-right">
+                  <div class="mega-promo-card">
+                    <img src="https://knyamed.com/cdn/shop/files/122THDECKANYA-1177a.jpg?v=1739900705&width=832" alt="Men ecoflex Promo">
+                    <div class="mega-promo-overlay">
+                      <h4 class="mega-promo-title">ecoflex™ Men Scrub</h4>
+                      <p class="mega-promo-sub">Engineered for 14-hour orthopedic &amp; surgery shifts.</p>
+                      <a href="product.php?id=8" class="mega-promo-btn">Shop ecoflex</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 3. CLASSIC SCRUBS -->
+          <li class="nav-item">
+            <a href="category.php?cat=Classic+Scrubs" class="nav-link">Classic Scrubs</a>
+          </li>
+
+          <!-- 4. ECOFLEX SCRUBS -->
+          <li class="nav-item">
+            <a href="category.php?cat=ecoflex-scrubs" class="nav-link">
+              ecoflex™
+            </a>
+            <div class="mega-menu-wrapper">
+              <div class="mega-menu-container" style="grid-template-columns: 240px 1fr;">
+                <aside class="mega-col-left">
+                  <h4 class="mega-heading">Why ecoflex™?</h4>
+                  <p>
+                    Proprietary eco-yarn made from recycled PET bottles. 4-way stretch, ultra-lightweight, and fluid-repellent.
+                  </p>
+                  <div class="mega-quick-links">
+                    <a href="category.php?cat=ecoflex-scrubs&gender=Women">Women's ecoflex™</a>
+                    <a href="category.php?cat=ecoflex-scrubs&gender=Men">Men's ecoflex™</a>
+                    <a href="category.php?cat=ecoflex-scrubs">All ecoflex™ Scrubs</a>
+                  </div>
+                </aside>
+                <div class="mega-col-center" style="grid-template-columns: repeat(3, 1fr);">
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/All_Ecoflex_Collection_Page_Banner_Mob_aebe0264-3fe4-46ba-88eb-235a6a61c20c.png?v=1783071490&width=600" alt="ecoflex scrubs" loading="lazy" style="object-fit:cover;object-position:center center;">
+                    </div>
+                    <h5 class="category-col-title">ecoflex™ Scrubs</h5>
+                    <p style="font-size:0.8125rem;color:var(--tm-text-secondary);margin-bottom:0.5rem;">4-Way Stretch • Anti-wrinkle • Fluid-barrier</p>
+                    <a href="category.php?cat=ecoflex-scrubs" style="font-weight:700;color:var(--tm-primary);font-size:0.875rem;">Shop Collection →</a>
+                  </div>
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/21st_Oct_Kanya-3116.jpg?v=1739900753&width=832" alt="Women ecoflex" loading="lazy" style="object-fit:cover;object-position:top center;">
+                    </div>
+                    <h5 class="category-col-title">Women's V-Neck</h5>
+                    <p style="font-size:0.8125rem;color:var(--tm-text-secondary);margin-bottom:0.5rem;">Tailored fit with 4 hidden utility pockets</p>
+                    <a href="product.php?id=7" style="font-weight:700;color:var(--tm-primary);font-size:0.875rem;">View Product →</a>
+                  </div>
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/11-12392-Recovereda.jpg?v=1739900756&width=832" alt="Men ecoflex" loading="lazy" style="object-fit:cover;object-position:top center;">
+                    </div>
+                    <h5 class="category-col-title">Men's V-Neck</h5>
+                    <p style="font-size:0.8125rem;color:var(--tm-text-secondary);margin-bottom:0.5rem;">Athletic ergonomic stretch design</p>
+                    <a href="product.php?id=8" style="font-weight:700;color:var(--tm-primary);font-size:0.875rem;">View Product →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 5. 6SENSE STETHOSCOPES -->
+          <li class="nav-item">
+            <a href="category.php?cat=Stethoscope" class="nav-link">
+              6sense
+            </a>
+            <div class="mega-menu-wrapper">
+              <div class="mega-menu-container" style="grid-template-columns: 240px 1fr;">
+                <aside class="mega-col-left">
+                  <h4 class="mega-heading">Acoustic Precision</h4>
+                  <p>
+                    Brilliant acoustics engineered to auscultate the faintest heart murmurs and pulmonary sounds.
+                  </p>
+                  <div class="mega-quick-links">
+                    <a href="category.php?cat=Stethoscope">30-Day Free Trial</a>
+                    <a href="category.php?cat=Stethoscope">5-Year Warranty</a>
+                    <a href="category.php?cat=Stethoscope">Free Name Engraving</a>
+                  </div>
+                </aside>
+                <div class="mega-col-center" style="grid-template-columns: repeat(3, 1fr);">
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/1_986b919b-9e67-4d3b-9c61-194170fabb2a.png?v=1778146597&width=832" alt="6sense (All Black)" loading="lazy" style="object-fit:contain;padding:10px 14px;background:#f8fafc;">
+                    </div>
+                    <h5 class="category-col-title">6sense (All Black)</h5>
+                    <p style="font-size:0.8125rem;color:var(--tm-text-secondary);margin-bottom:0.5rem;">All-Black Electroplated Titanium Finish</p>
+                    <a href="product.php?id=13" style="font-weight:700;color:var(--tm-primary);font-size:0.875rem;">Explore • ₹2,599 →</a>
+                  </div>
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/Collection_Banner_Grab_your_6sense_lite_mobile.png?v=1772606209&width=600" alt="6sense lite" loading="lazy" style="object-fit:cover;object-position:center center;">
+                    </div>
+                    <h5 class="category-col-title">6sense lite</h5>
+                    <p style="font-size:0.8125rem;color:var(--tm-text-secondary);margin-bottom:0.5rem;">Featherweight design for non-stop ward wear</p>
+                    <a href="product.php?id=14" style="font-weight:700;color:var(--tm-primary);font-size:0.875rem;">Explore • ₹1,899 →</a>
+                  </div>
+                  <div class="category-column">
+                    <div class="category-card-media">
+                      <img src="https://knyamed.com/cdn/shop/files/6sense_Rose_Gold_Collection_Page_Banner_All_Collection_Page_Mobile_2_83a61341-7f86-4646-900f-ce49e3a8cf98.png?v=1791872788&width=600" alt="6sense Paeds" loading="lazy" style="object-fit:cover;object-position:center center;">
+                    </div>
+                    <h5 class="category-col-title">6sense Paeds</h5>
+                    <p style="font-size:0.8125rem;color:var(--tm-text-secondary);margin-bottom:0.5rem;">Pediatric &amp; Neonatal Calibrated</p>
+                    <a href="product.php?id=15" style="font-weight:700;color:var(--tm-primary);font-size:0.875rem;">Explore • ₹2,599 →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 6. LAB COATS -->
+          <li class="nav-item">
+            <a href="category.php?cat=Lab+Coats" class="nav-link">Lab Coats</a>
+          </li>
+
+          <!-- 7. FOOTWEAR -->
+          <li class="nav-item">
+            <a href="category.php?cat=Footwear" class="nav-link">Footwear</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- ==========================================================
+       4. MAIN HERO BANNER SLIDER
+       ========================================================== -->
+  <section class="hero-slider-section" id="hero-slider">
+    <div class="hero-slider-container" id="hero-slider-track">
+      <!-- Slide 1 -->
+      <div class="hero-slide">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 768px)" srcset="https://knyamed.com/cdn/shop/files/Website_Banner_Ready_for_rounds_Mobile_test_2_80e78975-e568-4f4a-b9a8-9fee444e9853.png?v=1783596712&width=600">
+          <img src="https://knyamed.com/cdn/shop/files/Banner_Ready_for_rounds_Desktop.png?v=1779091625&width=1500" alt="Ready for Rounds - TRADE MEDS Medical Scrubs">
+        </picture>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 768px)" srcset="https://knyamed.com/cdn/shop/files/Scrub_Cap_Website_Asset_Mobile_Banner_New_Launch_688b3473-1464-4b71-aad6-4059ea4ce152.png?v=1794900267&width=600">
+          <img src="https://knyamed.com/cdn/shop/files/Scrub_Cap_Website_Asset_Desktop_Banner_Early_access.png?v=1794900284&width=1500" alt="Scrub Cap Early Access - TRADE MEDS">
+        </picture>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 768px)" srcset="https://knyamed.com/cdn/shop/files/Clogs_Website_Asset_Mobile_Banner.png?v=1792665260&width=600">
+          <img src="https://knyamed.com/cdn/shop/files/Clogs_Website_Asset_Desktop_Banner.png?v=1792665264&width=1500" alt="Comfort Medical Footwear Clogs - TRADE MEDS">
+        </picture>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button type="button" class="hero-slider-nav prev" id="hero-prev-btn" aria-label="Previous Slide">‹</button>
+    <button type="button" class="hero-slider-nav next" id="hero-next-btn" aria-label="Next Slide">›</button>
+
+    <div class="hero-slider-dots">
+      <span class="hero-dot active"></span>
+      <span class="hero-dot"></span>
+      <span class="hero-dot"></span>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       5. FEATURE HIGHLIGHTS
+       ========================================================== -->
+  <section class="feature-highlights-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4 class="feature-title">Fluid-Barrier Tech</h4>
+            <p class="feature-desc">Liquid repellent &amp; anti-fade medical weave</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          </div>
+          <div>
+            <h4 class="feature-title">4-Way Stretch</h4>
+            <p class="feature-desc">100% mobility during long surgical shifts</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <div>
+            <h4 class="feature-title">Hospital Verified</h4>
+            <p class="feature-desc">Over 10,000+ 5-star doctor ratings</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <h4 class="feature-title">Pan-India Delivery</h4>
+            <p class="feature-desc">Express dispatch &amp; Cash on Delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       6. RUNNING TICKER MARQUEE
+       ========================================================== -->
+  <section class="feature-ticker-section">
+    <div class="ticker-track">
+      <div class="ticker-item">
+        <span>ANTI-DISTRACTION</span><span class="ticker-bullet"></span>
+        <span>LAB TESTED</span><span class="ticker-bullet"></span>
+        <span>LONG-SHIFT VERIFIED</span><span class="ticker-bullet"></span>
+        <span>BACKED BY TECHNOLOGY</span><span class="ticker-bullet"></span>
+        <span>TONS OF STORAGE</span><span class="ticker-bullet"></span>
+      </div>
+      <div class="ticker-item" aria-hidden="true">
+        <span>ANTI-DISTRACTION</span><span class="ticker-bullet"></span>
+        <span>LAB TESTED</span><span class="ticker-bullet"></span>
+        <span>LONG-SHIFT VERIFIED</span><span class="ticker-bullet"></span>
+        <span>BACKED BY TECHNOLOGY</span><span class="ticker-bullet"></span>
+        <span>TONS OF STORAGE</span><span class="ticker-bullet"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       7. SHOP BY CATEGORIES
+       ========================================================== -->
+  <section class="section-wrapper" id="categories-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Shop By Categories</h2>
+        <p class="section-subtitle">Premium medical attire engineered for peak professional performance</p>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Row 1: Item 1 -->
+        <a href="category.php?gender=Women" class="category-chip-card" title="Shop Women's Scrubs &amp; Apparel">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/Women.png?v=1762154347" alt="Women" loading="lazy">
+          </div>
+          <span class="category-chip-label">Women</span>
+          <span class="category-chip-sub">Scrubs &amp; Lab Coats</span>
+        </a>
+
+        <!-- Row 1: Item 2 -->
+        <a href="category.php?gender=Men" class="category-chip-card" title="Shop Men's Scrubs &amp; Apparel">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/Men_3be25934-5489-4198-aa92-a2ddf5d8a6d3.png?v=1769579106" alt="Men" loading="lazy">
+          </div>
+          <span class="category-chip-label">Men</span>
+          <span class="category-chip-sub">Scrubs &amp; Aprons</span>
+        </a>
+
+        <!-- Row 1: Item 3 -->
+        <a href="category.php?cat=Classic+Scrubs" class="category-chip-card" title="Shop Classic Medical Scrubs">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/b7e551978c02d1b6d387114becb44701ba6904bb_fced66b8-7213-4d7e-b220-48c6dd53e3be.png?v=1769579237" alt="Classic Scrubs" loading="lazy">
+          </div>
+          <span class="category-chip-label">Classic Scrubs</span>
+          <span class="category-chip-sub">All-Day Comfort</span>
+        </a>
+
+        <!-- Row 1: Item 4 -->
+        <a href="category.php?cat=ecoflex-scrubs" class="category-chip-card" title="Shop ecoflex 4-Way Stretch Scrubs">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/Ecoflex_980bfb38-13e2-4371-b56a-c339b939f515_1.png?v=1769579377" alt="ecoflex Scrubs" loading="lazy">
+          </div>
+          <span class="category-chip-label">ecoflex™ Scrubs</span>
+          <span class="category-chip-sub">4-Way Stretch Tech</span>
+        </a>
+
+        <!-- Row 1: Item 5 -->
+        <a href="category.php?cat=Stethoscope" class="category-chip-card" title="Shop 6sense Precision Stethoscopes">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/Stethoscope_b67dbfb9-4daa-42f1-b6ff-5acde8386682.png?v=1769579524" alt="Stethoscope" loading="lazy">
+          </div>
+          <span class="category-chip-label">Stethoscope</span>
+          <span class="category-chip-sub">6sense Precision</span>
+        </a>
+
+        <!-- Row 2: Item 6 -->
+        <a href="category.php?cat=Footwear" class="category-chip-card" title="Shop Medical Footwear &amp; Clogs">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/Category_Image_1c081ffd-41d9-4779-8f98-721cd95e9913.png?v=1792663079" alt="Footwear" loading="lazy">
+          </div>
+          <span class="category-chip-label">Footwear New</span>
+          <span class="category-chip-sub">Anti-Fatigue Clogs</span>
+        </a>
+
+        <!-- Row 2: Item 7 -->
+        <a href="category.php?cat=Lab+Coats" class="category-chip-card" title="Shop Doctor Lab Coats &amp; Aprons">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/Labcoat_eb046422-0767-4374-a73d-97c252f84110.png?v=1769579738" alt="Lab Coats" loading="lazy">
+          </div>
+          <span class="category-chip-label">Lab Coats</span>
+          <span class="category-chip-sub">Classic &amp; Modern</span>
+        </a>
+
+        <!-- Row 2: Item 8 -->
+        <a href="category.php?cat=Underscrubs" class="category-chip-card" title="Shop Thermal &amp; Seamless Underscrubs">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/Underscrubs_69e49385-d903-4a7d-9312-b788edec3399.png?v=1769579815" alt="Underscrubs" loading="lazy">
+          </div>
+          <span class="category-chip-label">Underscrubs</span>
+          <span class="category-chip-sub">Seamless Baselayers</span>
+        </a>
+
+        <!-- Row 2: Item 9 -->
+        <a href="category.php?cat=Accessories" class="category-chip-card" title="Shop Surgical &amp; Scrub Caps">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/PDP_APP_Assests_Mega_menu_containe.png?v=1792664652&width=800" alt="Scrub Caps" loading="lazy">
+          </div>
+          <span class="category-chip-label">Scrub Caps</span>
+          <span class="category-chip-sub">Breathable Ties</span>
+        </a>
+
+        <!-- Row 2: Item 10 -->
+        <a href="product.php?id=17" class="category-chip-card" title="Shop Warm-Up Drift Jackets">
+          <div class="category-chip-avatar">
+            <img src="https://knyamed.com/cdn/shop/files/Everyday_Comfort_0a0f2a36-5daa-466a-abc0-4a53fba204ab.png?v=1782455818&width=800" alt="Drift Jacket" loading="lazy">
+          </div>
+          <span class="category-chip-label">Drift Jacket</span>
+          <span class="category-chip-sub">Clinic Warm-Up</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       8. SHOP BY COLOURS
+       ========================================================== -->
+  <section class="shop-by-colours-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Shop By Colours</h2>
+        <p class="section-subtitle">Click on any shade to filter scrubs &amp; medical apparel instantly</p>
+      </div>
+
+      <div class="colours-grid">
+        <div class="colour-card" data-color-family="All Blues" onclick="window.TM.filterByColor('All Blues')">
+          <div class="colour-card-image">
+            <img src="https://knyamed.com/cdn/shop/files/Scrub_Navy_Blue.png?v=1764763059&amp;width=260" alt="All Blues" loading="lazy">
+          </div>
+          <span class="colour-card-title">All Blues</span>
+          <span class="colour-card-sub">Navy, Royal &amp; Ceil</span>
+          <div class="colour-palette-dots">
+            <span class="colour-dot" style="background:#172554;" title="Navy Blue"></span>
+            <span class="colour-dot" style="background:#1d4ed8;" title="Royal Blue"></span>
+            <span class="colour-dot" style="background:#60a5fa;" title="Ceil Blue"></span>
+          </div>
+        </div>
+
+        <div class="colour-card" data-color-family="All Blacks" onclick="window.TM.filterByColor('All Blacks')">
+          <div class="colour-card-image">
+            <img src="https://knyamed.com/cdn/shop/files/Scrub_Black_2.png?v=1765190163&amp;width=260" alt="All Blacks" loading="lazy">
+          </div>
+          <span class="colour-card-title">All Blacks</span>
+          <span class="colour-card-sub">Matte Onyx &amp; Obsidian</span>
+          <div class="colour-palette-dots">
+            <span class="colour-dot" style="background:#020617;" title="Pitch Black"></span>
+            <span class="colour-dot" style="background:#0f172a;" title="Onyx Black"></span>
+            <span class="colour-dot" style="background:#334155;" title="Dark Charcoal"></span>
+          </div>
+        </div>
+
+        <div class="colour-card" data-color-family="All Greens" onclick="window.TM.filterByColor('All Greens')">
+          <div class="colour-card-image">
+            <img src="https://knyamed.com/cdn/shop/files/Scrub_Forest_Green.png?v=1764763353&amp;width=260" alt="All Greens" loading="lazy">
+          </div>
+          <span class="colour-card-title">All Greens</span>
+          <span class="colour-card-sub">Hunter, Forest &amp; Sage</span>
+          <div class="colour-palette-dots">
+            <span class="colour-dot" style="background:#022c22;" title="Hunter Green"></span>
+            <span class="colour-dot" style="background:#047857;" title="Forest Green"></span>
+            <span class="colour-dot" style="background:#10b981;" title="Hospital Sage"></span>
+          </div>
+        </div>
+
+        <div class="colour-card" data-color-family="All Reds" onclick="window.TM.filterByColor('All Reds')">
+          <div class="colour-card-image">
+            <img src="https://knyamed.com/cdn/shop/files/Scrub_Wine.png?v=1764763352&amp;width=260" alt="All Reds" loading="lazy">
+          </div>
+          <span class="colour-card-title">All Reds</span>
+          <span class="colour-card-sub">Wine, Burgundy &amp; Maroon</span>
+          <div class="colour-palette-dots">
+            <span class="colour-dot" style="background:#4c0519;" title="Burgundy"></span>
+            <span class="colour-dot" style="background:#881337;" title="Wine Red"></span>
+            <span class="colour-dot" style="background:#b91c1c;" title="Ruby Red"></span>
+          </div>
+        </div>
+
+        <div class="colour-card" data-color-family="All Pastels" onclick="window.TM.filterByColor('All Pastels')">
+          <div class="colour-card-image">
+            <img src="https://knyamed.com/cdn/shop/files/Scrub_Pastel_Lilac.png?v=1764763355&amp;width=260" alt="All Pastels" loading="lazy">
+          </div>
+          <span class="colour-card-title">All Pastels</span>
+          <span class="colour-card-sub">Lilac, Rose &amp; Sky</span>
+          <div class="colour-palette-dots">
+            <span class="colour-dot" style="background:#c084fc;" title="Lilac Purple"></span>
+            <span class="colour-dot" style="background:#f472b6;" title="Blush Rose"></span>
+            <span class="colour-dot" style="background:#38bdf8;" title="Ice Sky Blue"></span>
+          </div>
+        </div>
+
+        <div class="colour-card" data-color-family="All Greys" onclick="window.TM.filterByColor('All Greys')">
+          <div class="colour-card-image">
+            <img src="https://knyamed.com/cdn/shop/files/Scrub_Heather_Grey_892c9f0b-e236-4fcb-ba05-58b75fd70bc5.png?v=1765194527&amp;width=260" alt="All Greys" loading="lazy">
+          </div>
+          <span class="colour-card-title">All Greys</span>
+          <span class="colour-card-sub">Heather, Slate &amp; Pewter</span>
+          <div class="colour-palette-dots">
+            <span class="colour-dot" style="background:#1e293b;" title="Deep Slate"></span>
+            <span class="colour-dot" style="background:#64748b;" title="Heather Grey"></span>
+            <span class="colour-dot" style="background:#94a3b8;" title="Light Pewter"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       9. FEATURED PRODUCT COLLECTIONS: SHOP CLASSIC SCRUBS
+       ========================================================== -->
+  <section class="section-wrapper" id="classic-scrubs-section">
+    <div class="container">
+      <div class="section-header" style="display:flex;justify-content:space-between;align-items:flex-end;text-align:left;">
+        <div>
+          <h2 class="section-title">Shop Classic Scrubs</h2>
+          <p class="section-subtitle">Made to last with breathable &amp; light poly-viscose medical fabric</p>
+        </div>
+        <a href="category.php?cat=Classic+Scrubs" style="font-weight:700;color:var(--tm-primary);font-size:0.9375rem;text-decoration:underline;">View All Classic Scrubs →</a>
+      </div>
+
+      <div class="product-grid" id="classic-products-grid">
+        <div class="product-card" data-product-id="1" id="card-prod-1">
+          <div class="card-media-box">
+            <a href="product.php?id=1" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/1_36_f708815d-e636-4d70-af59-b4c8dbdc1e7d.jpg?v=1739900782&width=832" class="card-img-primary" id="card-img-1" alt="Classic Women's V-Neck (Navy) Scrub" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/Fabricdetailsclassic_NavyW_33e2f772-9afa-45ce-b26f-792dfa493b03.png?v=1779693531&width=832" class="card-img-hover" alt="Classic Women's V-Neck (Navy) Scrub" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="1" onclick="window.TM.toggleWishlist(1)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(1)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.8</span>
+              <span>(1248)</span>
+            </div>
+            <a href="product.php?id=1" class="card-title">Classic Women's V-Neck (Navy) Scrub</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹1,099</span>
+              <span class="mrp-price">₹1,599</span>
+              <span class="discount-badge">31% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Navy Blue" onmouseover="window.TM.previewCardSwatch(1, 'Navy Blue')"></span><span class="card-swatch-dot" style="background-color:#631d38;cursor:pointer;" title="Wine" onmouseover="window.TM.previewCardSwatch(1, 'Wine')"></span><span class="card-swatch-dot" style="background-color:#1a1a1a;cursor:pointer;" title="Black" onmouseover="window.TM.previewCardSwatch(1, 'Black')"></span><span class="card-swatch-dot" style="background-color:#7a8288;cursor:pointer;" title="Heather Grey" onmouseover="window.TM.previewCardSwatch(1, 'Heather Grey')"></span><span class="card-swatch-dot" style="background-color:#1e3d30;cursor:pointer;" title="Forest Green" onmouseover="window.TM.previewCardSwatch(1, 'Forest Green')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(1)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=1" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="2" id="card-prod-2">
+          <div class="card-media-box">
+            <a href="product.php?id=2" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/11TH_MAY_KNYA-1595_2.jpg?v=1739900798&width=832" class="card-img-primary" id="card-img-2" alt="Classic Men's V-Neck (Navy) Scrub" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/Fabricdetailsclassic_NavyM.png?v=1779449658&width=832" class="card-img-hover" alt="Classic Men's V-Neck (Navy) Scrub" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="2" onclick="window.TM.toggleWishlist(2)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(2)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.8</span>
+              <span>(984)</span>
+            </div>
+            <a href="product.php?id=2" class="card-title">Classic Men's V-Neck (Navy) Scrub</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹1,099</span>
+              <span class="mrp-price">₹1,599</span>
+              <span class="discount-badge">31% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Navy Blue" onmouseover="window.TM.previewCardSwatch(2, 'Navy Blue')"></span><span class="card-swatch-dot" style="background-color:#631d38;cursor:pointer;" title="Wine" onmouseover="window.TM.previewCardSwatch(2, 'Wine')"></span><span class="card-swatch-dot" style="background-color:#1a1a1a;cursor:pointer;" title="Black" onmouseover="window.TM.previewCardSwatch(2, 'Black')"></span><span class="card-swatch-dot" style="background-color:#1e3d30;cursor:pointer;" title="Forest Green" onmouseover="window.TM.previewCardSwatch(2, 'Forest Green')"></span><span class="card-swatch-dot" style="background-color:#7a8288;cursor:pointer;" title="Heather Grey" onmouseover="window.TM.previewCardSwatch(2, 'Heather Grey')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(2)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=2" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="3" id="card-prod-3">
+          <div class="card-media-box">
+            <a href="product.php?id=3" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/1a3O1A8835.jpg?v=1739900851&width=832" class="card-img-primary" id="card-img-3" alt="Classic Women's V-Neck (Wine) Scrub" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/Fabricdetailsclassic_WineW_b18f4677-d474-4230-892b-7e5abdfb6d8b.png?v=1779693298&width=832" class="card-img-hover" alt="Classic Women's V-Neck (Wine) Scrub" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="3" onclick="window.TM.toggleWishlist(3)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(3)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.9</span>
+              <span>(1412)</span>
+            </div>
+            <a href="product.php?id=3" class="card-title">Classic Women's V-Neck (Wine) Scrub</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹1,099</span>
+              <span class="mrp-price">₹1,599</span>
+              <span class="discount-badge">31% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#631d38;cursor:pointer;" title="Wine" onmouseover="window.TM.previewCardSwatch(3, 'Wine')"></span><span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Navy Blue" onmouseover="window.TM.previewCardSwatch(3, 'Navy Blue')"></span><span class="card-swatch-dot" style="background-color:#1a1a1a;cursor:pointer;" title="Black" onmouseover="window.TM.previewCardSwatch(3, 'Black')"></span><span class="card-swatch-dot" style="background-color:#b5a3cc;cursor:pointer;" title="Pastel Lilac" onmouseover="window.TM.previewCardSwatch(3, 'Pastel Lilac')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(3)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=3" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="4" id="card-prod-4">
+          <div class="card-media-box">
+            <a href="product.php?id=4" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/1_50.jpg?v=1739900724&width=832" class="card-img-primary" id="card-img-4" alt="Classic Men's V-Neck (Wine) Scrub" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/Fabricdetailsclassic_WineM.png?v=1779449375&width=832" class="card-img-hover" alt="Classic Men's V-Neck (Wine) Scrub" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="4" onclick="window.TM.toggleWishlist(4)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(4)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.8</span>
+              <span>(642)</span>
+            </div>
+            <a href="product.php?id=4" class="card-title">Classic Men's V-Neck (Wine) Scrub</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹1,299</span>
+              <span class="mrp-price">₹1,799</span>
+              <span class="discount-badge">28% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#631d38;cursor:pointer;" title="Wine" onmouseover="window.TM.previewCardSwatch(4, 'Wine')"></span><span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Navy Blue" onmouseover="window.TM.previewCardSwatch(4, 'Navy Blue')"></span><span class="card-swatch-dot" style="background-color:#1a1a1a;cursor:pointer;" title="Black" onmouseover="window.TM.previewCardSwatch(4, 'Black')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(4)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=4" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       10. BEST SELLERS: SHOP ECOFLEX™ SCRUBS
+       ========================================================== -->
+  <section class="section-wrapper" id="ecoflex-section" style="background-color: var(--tm-bg-soft);">
+    <div class="container">
+      <div class="section-header" style="display:flex;justify-content:space-between;align-items:flex-end;text-align:left;">
+        <div>
+          <h2 class="section-title">Shop ecoflex™ Scrubs</h2>
+          <p class="section-subtitle">Engineered with proprietary 4-way stretch technology made from recycled PET bottles</p>
+        </div>
+        <a href="category.php?cat=ecoflex-scrubs" style="font-weight:700;color:var(--tm-primary);font-size:0.9375rem;text-decoration:underline;">View All ecoflex™ →</a>
+      </div>
+
+      <div class="product-grid" id="ecoflex-products-grid">
+        <div class="product-card" data-product-id="7" id="card-prod-7">
+          <div class="card-media-box">
+            <a href="product.php?id=7" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/21st_Oct_Kanya-3116.jpg?v=1739900753&width=832" class="card-img-primary" id="card-img-7" alt="ecoflex™ Women's V-Neck (Navy) Scrub" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/ecoflexfabriccompositionandtech_NavyBlue.png?v=1776248509&width=832" class="card-img-hover" alt="ecoflex™ Women's V-Neck (Navy) Scrub" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="7" onclick="window.TM.toggleWishlist(7)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(7)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.9</span>
+              <span>(2180)</span>
+            </div>
+            <a href="product.php?id=7" class="card-title">ecoflex™ Women's V-Neck (Navy) Scrub</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹2,499</span>
+              <span class="mrp-price">₹3,499</span>
+              <span class="discount-badge">29% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Navy Blue" onmouseover="window.TM.previewCardSwatch(7, 'Navy Blue')"></span><span class="card-swatch-dot" style="background-color:#631d38;cursor:pointer;" title="Wine" onmouseover="window.TM.previewCardSwatch(7, 'Wine')"></span><span class="card-swatch-dot" style="background-color:#5a636d;cursor:pointer;" title="Steel Grey" onmouseover="window.TM.previewCardSwatch(7, 'Steel Grey')"></span><span class="card-swatch-dot" style="background-color:#946f7f;cursor:pointer;" title="Mauve" onmouseover="window.TM.previewCardSwatch(7, 'Mauve')"></span><span class="card-swatch-dot" style="background-color:#1a1a1a;cursor:pointer;" title="Black" onmouseover="window.TM.previewCardSwatch(7, 'Black')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(7)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=7" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="8" id="card-prod-8">
+          <div class="card-media-box">
+            <a href="product.php?id=8" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/11-12392-Recovereda.jpg?v=1739900756&width=832" class="card-img-primary" id="card-img-8" alt="ecoflex™ Men's V-Neck (Navy) Scrub" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/ecoflexfabriccompositionandtech_NavyBlue.png?v=1776248509&width=832" class="card-img-hover" alt="ecoflex™ Men's V-Neck (Navy) Scrub" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="8" onclick="window.TM.toggleWishlist(8)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(8)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.9</span>
+              <span>(1890)</span>
+            </div>
+            <a href="product.php?id=8" class="card-title">ecoflex™ Men's V-Neck (Navy) Scrub</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹2,499</span>
+              <span class="mrp-price">₹3,499</span>
+              <span class="discount-badge">29% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Navy Blue" onmouseover="window.TM.previewCardSwatch(8, 'Navy Blue')"></span><span class="card-swatch-dot" style="background-color:#631d38;cursor:pointer;" title="Wine" onmouseover="window.TM.previewCardSwatch(8, 'Wine')"></span><span class="card-swatch-dot" style="background-color:#5a636d;cursor:pointer;" title="Steel Grey" onmouseover="window.TM.previewCardSwatch(8, 'Steel Grey')"></span><span class="card-swatch-dot" style="background-color:#1a1a1a;cursor:pointer;" title="Black" onmouseover="window.TM.previewCardSwatch(8, 'Black')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(8)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=8" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="9" id="card-prod-9">
+          <div class="card-media-box">
+            <a href="product.php?id=9" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/122THDECKANYA-1177a.jpg?v=1739900705&width=832" class="card-img-primary" id="card-img-9" alt="ecoflex™ Men's V-Neck (Wine) Scrub" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/ecoflex_fabric_composition_and_tech_Wine.png?v=1773831010&width=832" class="card-img-hover" alt="ecoflex™ Men's V-Neck (Wine) Scrub" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="9" onclick="window.TM.toggleWishlist(9)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(9)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.8</span>
+              <span>(730)</span>
+            </div>
+            <a href="product.php?id=9" class="card-title">ecoflex™ Men's V-Neck (Wine) Scrub</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹2,499</span>
+              <span class="mrp-price">₹3,499</span>
+              <span class="discount-badge">29% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#631d38;cursor:pointer;" title="Wine" onmouseover="window.TM.previewCardSwatch(9, 'Wine')"></span><span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Navy Blue" onmouseover="window.TM.previewCardSwatch(9, 'Navy Blue')"></span><span class="card-swatch-dot" style="background-color:#5a636d;cursor:pointer;" title="Steel Grey" onmouseover="window.TM.previewCardSwatch(9, 'Steel Grey')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(9)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=9" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="10" id="card-prod-10">
+          <div class="card-media-box">
+            <a href="product.php?id=10" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/117THDECKANYA2022-37757a_c245c457-288a-415d-8677-6c690810c22b.jpg?v=1739900710&width=832" class="card-img-primary" id="card-img-10" alt="ecoflex™ Women's V-Neck (Wine) Scrub" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/ecoflex_fabric_composition_and_tech_Wine.png?v=1773831010&width=832" class="card-img-hover" alt="ecoflex™ Women's V-Neck (Wine) Scrub" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="10" onclick="window.TM.toggleWishlist(10)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(10)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.9</span>
+              <span>(1105)</span>
+            </div>
+            <a href="product.php?id=10" class="card-title">ecoflex™ Women's V-Neck (Wine) Scrub</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹2,499</span>
+              <span class="mrp-price">₹3,499</span>
+              <span class="discount-badge">29% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#631d38;cursor:pointer;" title="Wine" onmouseover="window.TM.previewCardSwatch(10, 'Wine')"></span><span class="card-swatch-dot" style="background-color:#5a636d;cursor:pointer;" title="Steel Grey" onmouseover="window.TM.previewCardSwatch(10, 'Steel Grey')"></span><span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Navy Blue" onmouseover="window.TM.previewCardSwatch(10, 'Navy Blue')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(10)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=10" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       11. NEW ARRIVALS: STETHOSCOPES & FOOTWEAR
+       ========================================================== -->
+  <section class="section-wrapper" id="stethoscope-section">
+    <div class="container">
+      <div class="section-header" style="display:flex;justify-content:space-between;align-items:flex-end;text-align:left;">
+        <div>
+          <h2 class="section-title">Shop Stethoscope &amp; Footwear</h2>
+          <p class="section-subtitle">Brilliant acoustics • Innovative design • 30-Day Free Trial</p>
+        </div>
+        <a href="category.php?cat=Stethoscope" style="font-weight:700;color:var(--tm-primary);font-size:0.9375rem;text-decoration:underline;">View All Equipment →</a>
+      </div>
+
+      <div class="product-grid" id="stethoscope-products-grid">
+        <div class="product-card" data-product-id="13" id="card-prod-13">
+          <div class="card-media-box">
+            <a href="product.php?id=13" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/1_986b919b-9e67-4d3b-9c61-194170fabb2a.png?v=1778146597&width=832" class="card-img-primary" id="card-img-13" alt="6sense (Black), All Black Finish Stethoscope" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/2_447810e4-5896-408b-be4f-2f80e10a3f6e.png?v=1778146598&width=832" class="card-img-hover" alt="6sense (Black), All Black Finish Stethoscope" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="13" onclick="window.TM.toggleWishlist(13)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(13)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.9</span>
+              <span>(1420)</span>
+            </div>
+            <a href="product.php?id=13" class="card-title">6sense (Black), All Black Finish Stethoscope</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹2,599</span>
+              <span class="mrp-price">₹3,999</span>
+              <span class="discount-badge">35% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#1a1a1a;cursor:pointer;" title="Matte Black" onmouseover="window.TM.previewCardSwatch(13, 'Matte Black')"></span><span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Steel Navy" onmouseover="window.TM.previewCardSwatch(13, 'Steel Navy')"></span><span class="card-swatch-dot" style="background-color:#8a3324;cursor:pointer;" title="Rose Gold Maroon" onmouseover="window.TM.previewCardSwatch(13, 'Rose Gold Maroon')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(13)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=13" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="14" id="card-prod-14">
+          <div class="card-media-box">
+            <a href="product.php?id=14" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/1_8d8a9e66-cb99-4b6f-be14-739e815ddebe.png?v=1780654325&width=832" class="card-img-primary" id="card-img-14" alt="6sense lite - High Acoustic Stethoscope" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/2_babba0b2-ba54-4594-8901-8c357b0850c8.png?v=1780654325&width=832" class="card-img-hover" alt="6sense lite - High Acoustic Stethoscope" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="14" onclick="window.TM.toggleWishlist(14)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(14)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.8</span>
+              <span>(950)</span>
+            </div>
+            <a href="product.php?id=14" class="card-title">6sense lite - High Acoustic Stethoscope</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹1,899</span>
+              <span class="mrp-price">₹2,899</span>
+              <span class="discount-badge">34% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#2b2b2b;cursor:pointer;" title="Steel Black" onmouseover="window.TM.previewCardSwatch(14, 'Steel Black')"></span><span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Steel Navy" onmouseover="window.TM.previewCardSwatch(14, 'Steel Navy')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(14)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=14" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="15" id="card-prod-15">
+          <div class="card-media-box">
+            <a href="product.php?id=15" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/1_701862ab-2972-4a0c-a685-eb651779d3c4.png?v=1778146687&width=832" class="card-img-primary" id="card-img-15" alt="6sense Paeds (Rose Gold Maroon) Pediatric Stethoscope" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/2_027b772a-d723-44e5-aee1-49e0c41b83cf.png?v=1778146686&width=832" class="card-img-hover" alt="6sense Paeds (Rose Gold Maroon) Pediatric Stethoscope" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="15" onclick="window.TM.toggleWishlist(15)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(15)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.9</span>
+              <span>(780)</span>
+            </div>
+            <a href="product.php?id=15" class="card-title">6sense Paeds (Rose Gold Maroon) Pediatric Stethoscope</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹2,599</span>
+              <span class="mrp-price">₹3,999</span>
+              <span class="discount-badge">35% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#8a3324;cursor:pointer;" title="Rose Gold Maroon" onmouseover="window.TM.previewCardSwatch(15, 'Rose Gold Maroon')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(15)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=15" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-product-id="16" id="card-prod-16">
+          <div class="card-media-box">
+            <a href="product.php?id=16" style="display:block;width:100%;height:100%;">
+              <img src="https://knyamed.com/cdn/shop/files/Category_Image_1c081ffd-41d9-4779-8f98-721cd95e9913.png?v=1792663079" class="card-img-primary" id="card-img-16" alt="TRADE MEDS Pro Comfort Medical Clogs" loading="lazy">
+              <img src="https://knyamed.com/cdn/shop/files/Clogs_Website_Asset_Desktop_Banner.png?v=1792665264&width=1500" class="card-img-hover" alt="TRADE MEDS Pro Comfort Medical Clogs" loading="lazy">
+            </a>
+            <button type="button" class="card-wishlist-btn" data-product-id="16" onclick="window.TM.toggleWishlist(16)" title="Add to Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+            <button type="button" class="card-quickview-btn" onclick="window.TM.openQuickView(16)">Quick View</button>
+          </div>
+          <div class="card-details">
+            <div class="card-rating-row">
+              <svg class="star-icon" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span class="rating-value">4.9</span>
+              <span>(830)</span>
+            </div>
+            <a href="product.php?id=16" class="card-title">TRADE MEDS Pro Comfort Medical Clogs</a>
+            <div class="card-price-row">
+              <span class="sale-price">₹1,999</span>
+              <span class="mrp-price">₹2,799</span>
+              <span class="discount-badge">28% OFF</span>
+            </div>
+            <div class="card-swatches-row">
+              <span class="card-swatch-dot" style="background-color:#1c2447;cursor:pointer;" title="Midnight Navy" onmouseover="window.TM.previewCardSwatch(16, 'Midnight Navy')"></span><span class="card-swatch-dot" style="background-color:#ffffff;cursor:pointer;" title="Pure White" onmouseover="window.TM.previewCardSwatch(16, 'Pure White')"></span><span class="card-swatch-dot" style="background-color:#1a1a1a;cursor:pointer;" title="Matte Black" onmouseover="window.TM.previewCardSwatch(16, 'Matte Black')"></span>
+              
+            </div>
+            <div style="display:flex;gap:6px;margin-top:0.75rem;">
+              <button type="button" class="btn-secondary" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;" onclick="window.TM.addToCart(16)">
+                Add to Bag
+              </button>
+              <a href="product.php?id=16" class="cart-checkout-btn" style="flex:1;height:36px;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       12. MID-PAGE INSTITUTIONAL / BULK BANNER
+       ========================================================== -->
+  <section class="container" id="bulk-banner">
+    <div class="bulk-order-banner">
+      <picture>
+        <source media="(max-width: 768px)" srcset="https://knyamed.com/cdn/shop/files/Bulk_Order_Mobile_Banner_32_BIT_3_21e7062b-516d-439c-8f67-d705af117d27.png?v=1754895252&width=600">
+        <img src="https://knyamed.com/cdn/shop/files/Bulk_Order_Desktop_Banner_32_BIT_1_211d66de-3a7d-4616-9e2d-0ab3cc10ff21.png?v=1754894435&width=1500" alt="Bulk Orders & Custom Hospital Embroidery - TRADE MEDS">
+      </picture>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       13. BRAND / INSTITUTIONAL PARTNERS CAROUSEL
+       ========================================================== -->
+  <section class="institutions-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Institutions we have served</h2>
+        <p class="section-subtitle">We’ve suited up the best healthcare systems across India</p>
+      </div>
+
+      <div class="institutions-marquee">
+        <div class="institutions-track">
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/Fortis-Logo_d4cf71d7-2953-4cc3-ab53-c2e07c2e12ce.png?v=1783414487&width=500" alt="Fortis"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/apolloLogo.webp?v=1758976511&width=500" alt="Apollo Hospitals"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/narayana-logo_cb308ba3-80ad-4d83-b7f8-67310fdf8dd3.png?v=1769582030&width=500" alt="Narayana Health"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/Reliance_c2a8f3f3-684e-4783-b65b-f07e845c2bf2.png?v=1783414901&width=500" alt="Reliance Foundation Hospital"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/image_25_1_98fd2179-358b-492e-9cca-ba2ce33d970f.png?v=1769582040&width=500" alt="AIIMS"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/supertails-logo_1200x_2b246d4b-7c96-4a28-9ca5-a96699ee9b9f.jpg?v=1783414692&width=500" alt="Veterinary Partners"></div>
+          
+          <!-- Duplicate for seamless loop -->
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/Fortis-Logo_d4cf71d7-2953-4cc3-ab53-c2e07c2e12ce.png?v=1783414487&width=500" alt="Fortis"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/apolloLogo.webp?v=1758976511&width=500" alt="Apollo Hospitals"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/narayana-logo_cb308ba3-80ad-4d83-b7f8-67310fdf8dd3.png?v=1769582030&width=500" alt="Narayana Health"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/Reliance_c2a8f3f3-684e-4783-b65b-f07e845c2bf2.png?v=1783414901&width=500" alt="Reliance Foundation Hospital"></div>
+          <div class="institution-logo"><img src="https://knyamed.com/cdn/shop/files/image_25_1_98fd2179-358b-492e-9cca-ba2ce33d970f.png?v=1769582040&width=500" alt="AIIMS"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       14. IN THE NEWS / MEDIA SECTION
+       ========================================================== -->
+  <section class="news-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">In the news</h2>
+        <p class="section-subtitle">How TRADE MEDS is transforming medical apparel across the healthcare ecosystem</p>
+      </div>
+
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-card-logo">
+            <img src="https://knyamed.com/cdn/shop/files/In-the-news_-section-icon-1-TOI_300x120_08c4a138-c257-4c5c-bbe8-a71bf5a25d9a.png?v=1685962653&width=200" alt="Times of India">
+          </div>
+          <p class="news-quote">"How technology and specialized high-performance fabrics are democratising healthcare apparel in India."</p>
+          <a href="https://timesofindia.indiatimes.com" target="_blank" class="news-read-more">Read More →</a>
+        </div>
+
+        <div class="news-card">
+          <div class="news-card-logo">
+            <img src="https://knyamed.com/cdn/shop/files/Forbes_India_Logo_200200_1.png?v=1712127276&width=200" alt="Forbes India">
+          </div>
+          <p class="news-quote">"Featured in Forbes India 30 Under 30 for revolutionary work in functional doctor scrubs and hospital wear."</p>
+          <a href="https://www.forbesindia.com" target="_blank" class="news-read-more">Read More →</a>
+        </div>
+
+        <div class="news-card">
+          <div class="news-card-logo">
+            <img src="https://knyamed.com/cdn/shop/files/In-the-news_-section-icon-5-economic-times_300x120_29509605-a446-46a0-8f1a-49e3248d66ec.png?v=1685962654&width=200" alt="The Economic Times">
+          </div>
+          <p class="news-quote">"The evolution of medical apparel in India: Moving from ill-fitting cotton scrubs to high-grade technical textiles."</p>
+          <a href="https://economictimes.indiatimes.com" target="_blank" class="news-read-more">Read More →</a>
+        </div>
+
+        <div class="news-card">
+          <div class="news-card-logo">
+            <img src="https://knyamed.com/cdn/shop/files/In-the-news_-section-icon-2-the-better-india_300x120_d172dba0-dc1c-492f-bda1-e9b8b1e0ddd7.png?v=1685962654&width=200" alt="The Better India">
+          </div>
+          <p class="news-quote">"Duo makes eco-friendly, durable scrubs for doctors and nurses using recycled plastic bottles."</p>
+          <a href="https://www.thebetterindia.com" target="_blank" class="news-read-more">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       15. JOIN TRADE MEDS CLUB (LOYALTY PROGRAM)
+       ========================================================== -->
+  <section class="join-club-section" id="join-club">
+    <div class="club-inner">
+      <div>
+        <h2 class="club-title">Join the TRADE MEDS Club</h2>
+        <p class="club-desc">Earn points every time you shop. Unlock free name embroidery, priority hospital delivery, and exclusive early access to new color launches.</p>
+        <div class="club-perks-row">
+          <div class="club-perk-item">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Earn 5% Back in Store Credits</span>
+          </div>
+          <div class="club-perk-item">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Free Name &amp; Dept Embroidery</span>
+          </div>
+          <div class="club-perk-item">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Invites to Vitals Medico Summit</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="button" class="club-cta-btn" onclick="window.TM.openModal('auth-modal')">Join Now • It's Free</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       16. CUSTOMER TESTIMONIALS & REVIEWS
+       ========================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Verified Doctor Reviews</h2>
+        <p class="section-subtitle">Real experiences from healthcare professionals in operating rooms and ICUs</p>
+      </div>
+
+      <!-- Trust Social Proof Bar -->
+      <div class="reviews-trust-bar">
+        <div class="trust-stat">
+          <span class="trust-score">4.9</span>
+          <div class="trust-stars-box">
+            <div class="review-stars" style="display:inline-flex;gap:2px;color:#f59e0b;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="trust-caption">Over 10,000+ 5-Star Doctor Ratings</div>
+          </div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-tag-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span>AIIMS, Apollo, Fortis &amp; Manipal Doctors</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-tag-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>100% Medically Verified Purchases</span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review Card 1 -->
+        <div class="review-card">
+          <div class="review-doctor-header">
+            <div class="doctor-avatar-box">
+              <img src="https://knyamed.com/cdn/shop/files/456x500px-Dr-Mili-Dogra-Anesthesiology-Resident_ab4edce0-1b04-431e-b09f-678b766e87c7.jpg?v=1683281588&amp;width=380" alt="Dr. Mili Dogra" loading="lazy">
+              <div class="doctor-avatar-badge" title="Verified Medical Practitioner">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+            </div>
+            <div class="doctor-meta-info">
+              <div class="reviewer-name">Dr. Mili Dogra</div>
+              <div class="reviewer-specialty">Anesthesiology Resident</div>
+              <div class="reviewer-hospital">AIIMS Hospital, New Delhi</div>
+            </div>
+          </div>
+
+          <div class="review-rating-row">
+            <div class="review-stars" style="display:inline-flex;gap:2px;color:#f59e0b;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="review-verified-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-1px;margin-right:3px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Verified Buyer</span>
+          </div>
+
+          <div class="review-product-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+            <span>Wears: ecoflex™ Scrub Suit (Navy Blue)</span>
+          </div>
+
+          <p class="review-text">"The ecoflex™ scrubs are a game changer for 14-hour orthopedic surgery shifts. Zero tightness at the shoulders, and the fabric doesn't absorb hospital smells or fluids even after marathon OT sessions."</p>
+
+          <div class="review-card-footer">
+            <span class="review-highlight-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-1px;margin-right:2px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>4-Way Stretch Tech</span>
+            <span>Reviewed 2 days ago</span>
+          </div>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="review-card">
+          <div class="review-doctor-header">
+            <div class="doctor-avatar-box">
+              <img src="https://knyamed.com/cdn/shop/files/250x250px-Dr-Prateek-Makwana-Fertility-Specialist_a197c02e-7b83-4940-9671-8086c30a1ba4.jpg?v=1683282037&amp;width=200" alt="Dr. Prateek Makwana" loading="lazy">
+              <div class="doctor-avatar-badge" title="Verified Medical Practitioner">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+            </div>
+            <div class="doctor-meta-info">
+              <div class="reviewer-name">Dr. Prateek Makwana</div>
+              <div class="reviewer-specialty">Fertility &amp; Embryology Specialist</div>
+              <div class="reviewer-hospital">Vasundhara IVF, Mumbai</div>
+            </div>
+          </div>
+
+          <div class="review-rating-row">
+            <div class="review-stars" style="display:inline-flex;gap:2px;color:#f59e0b;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="review-verified-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-1px;margin-right:3px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Verified Buyer</span>
+          </div>
+
+          <div class="review-product-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 3v5a4.5 4.5 0 0 0 9 0V3M18 10a4 4 0 0 1-4 4h-.5a4.5 4.5 0 0 1-4.5-4.5V3M20 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg>
+            <span>Uses: 6sense Precision Stethoscope (Matte Black)</span>
+          </div>
+
+          <p class="review-text">"I ordered the 6sense Stethoscope in All-Black finish. The acoustic amplification is astonishingly sharp, easily on par with international brands costing three times more. A true clinical masterpiece."</p>
+
+          <div class="review-card-footer">
+            <span class="review-highlight-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-1px;margin-right:2px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Acoustic Clarity</span>
+            <span>Reviewed 1 week ago</span>
+          </div>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="review-card">
+          <div class="review-doctor-header">
+            <div class="doctor-avatar-box">
+              <img src="https://knyamed.com/cdn/shop/files/250x250px-Dr-Shivani-Agarwal-OBGYN-Resident_b2b80249-328c-4def-8586-69e27aea3814.jpg?v=1683282037&amp;width=200" alt="Dr. Shivani Agarwal" loading="lazy">
+              <div class="doctor-avatar-badge" title="Verified Medical Practitioner">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+            </div>
+            <div class="doctor-meta-info">
+              <div class="reviewer-name">Dr. Shivani Agarwal</div>
+              <div class="reviewer-specialty">OBGYN Resident</div>
+              <div class="reviewer-hospital">Apollo Speciality Hospitals, Kolkata</div>
+            </div>
+          </div>
+
+          <div class="review-rating-row">
+            <div class="review-stars" style="display:inline-flex;gap:2px;color:#f59e0b;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="review-verified-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-1px;margin-right:3px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Verified Buyer</span>
+          </div>
+
+          <div class="review-product-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Wears: Classic Women's Scrub Suit (Wine Red) + Embroidery</span>
+          </div>
+
+          <p class="review-text">"Our entire OBGYN department ordered matching wine-red scrubs with custom doctor embroidery. The fabric withstands commercial autoclave washing without fading or shrinking. Five stars!"</p>
+
+          <div class="review-card-footer">
+            <span class="review-highlight-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-1px;margin-right:2px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Autoclave-Safe</span>
+            <span>Reviewed 3 weeks ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       17. SEEN IN TRADE MEDS SOCIAL MEDIA GALLERY
+       ========================================================== -->
+  <section class="seen-in-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Seen in TRADE MEDS</h2>
+        <p class="section-subtitle">Over 10,000+ 5-star reviews and counting • Tag @TradeMedsOfficial on Instagram</p>
+      </div>
+
+      <div class="seen-in-grid">
+        <div class="social-card">
+          <img src="https://knyamed.com/cdn/shop/files/456x500px-Dr-Mili-Dogra-Anesthesiology-Resident_ab4edce0-1b04-431e-b09f-678b766e87c7.jpg?v=1683281588&width=380" alt="Dr Mili Dogra" loading="lazy">
+          <div class="social-card-overlay">
+            <span class="social-card-name">Dr. Mili Dogra</span>
+            <span class="social-card-role">Anesthesiology</span>
+          </div>
+        </div>
+
+        <div class="social-card">
+          <img src="https://knyamed.com/cdn/shop/files/250x250px-Dr-Shivani-Agarwal-OBGYN-Resident_b2b80249-328c-4def-8586-69e27aea3814.jpg?v=1683282037&width=200" alt="Dr Shivani Agarwal" loading="lazy">
+          <div class="social-card-overlay">
+            <span class="social-card-name">Dr. Shivani Agarwal</span>
+            <span class="social-card-role">OBGYN Resident</span>
+          </div>
+        </div>
+
+        <div class="social-card">
+          <img src="https://knyamed.com/cdn/shop/files/250x250px-Dr-Prateek-Makwana-Fertility-Specialist_a197c02e-7b83-4940-9671-8086c30a1ba4.jpg?v=1683282037&width=200" alt="Dr Prateek Makwana" loading="lazy">
+          <div class="social-card-overlay">
+            <span class="social-card-name">Dr. Prateek Makwana</span>
+            <span class="social-card-role">Fertility Specialist</span>
+          </div>
+        </div>
+
+        <div class="social-card">
+          <img src="https://knyamed.com/cdn/shop/files/456x500px--Himanshu-Sharma-Anesthesia-student_b22c703a-6fe1-4719-849a-95b3dafbb119.jpg?v=1683281588&width=380" alt="Himanshu Sharma" loading="lazy">
+          <div class="social-card-overlay">
+            <span class="social-card-name">Himanshu Sharma</span>
+            <span class="social-card-role">Anesthesia Student</span>
+          </div>
+        </div>
+
+        <div class="social-card">
+          <img src="https://knyamed.com/cdn/shop/files/250x250px-Hema-Rawat-RN-_Registered-Nurse_3b45a6ee-e518-4fa4-9d0b-5e78859cdbef.jpg?v=1683282106&width=200" alt="Hema Rawat" loading="lazy">
+          <div class="social-card-overlay">
+            <span class="social-card-name">Hema Rawat</span>
+            <span class="social-card-role">Registered Nurse</span>
+          </div>
+        </div>
+
+        <div class="social-card">
+          <img src="https://knyamed.com/cdn/shop/files/250x250px-mitali-sharma-Medical-student_41a67f1f-bf98-4982-ab7e-04c79049b88d.jpg?v=1683282106&width=200" alt="Mitali Sharma" loading="lazy">
+          <div class="social-card-overlay">
+            <span class="social-card-name">Mitali Sharma</span>
+            <span class="social-card-role">Medical Student</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       18. SEO CONTENT ACCORDION SECTION
+       ========================================================== -->
+  <section class="seo-content-section">
+    <div class="container">
+      <div class="seo-card">
+        <h2>TRADE MEDS: Stylish &amp; Functional Medical Scrubs, Lab Coats, and Stethoscopes for Men &amp; Women!</h2>
+        
+        <div id="seo-collapsed-content" class="seo-text-collapsed">
+          <h3>Introduction:</h3>
+          <p>TRADE MEDS is your premier destination for top-quality medical scrubs, consultant lab coats, and underscrubs for healthcare professionals across India. We believe every doctor, surgeon, nurse, and medical student deserves comfortable, flexible, and breathable medical apparel that also projects an impeccably professional clinical image.</p>
+
+          <h3>Medical Scrub Suits for Men and Women</h3>
+          <p>Experience the perfect fusion of functionality and contemporary medical fashion. Crafted from our signature polyester-viscose and ecoflex™ blends, our scrubs offer superior comfort, fluid-barrier protection, and practical utility for high-stress hospital routines.</p>
+
+          <h3>Types of Scrubs for Healthcare Heroes:</h3>
+          <ul>
+            <li><strong>V-Neck Scrubs:</strong> Clean, modern, flattering V-neck cut tailored with reinforced stitching and pen pockets.</li>
+            <li><strong>Mandarin Collar Scrubs:</strong> Sophisticated standing collar scrubs for senior consultants and clinical directors.</li>
+            <li><strong>ecoflex™ 4-Way Stretch Scrubs:</strong> Created from recycled PET bottles with moisture-wicking and fluid-repellent finish.</li>
+            <li><strong>Full-Sleeve Scrubs:</strong> Maximum coverage and barrier protection for critical ICU and infectious disease wards.</li>
+          </ul>
+
+          <h3>Lab Coat Aprons for Doctors and Consultants</h3>
+          <p>Our lab coats blend distinguished authority with practical storage. Made from high-density stain-resistant poly-cotton twill with dedicated iPad pockets, interior phone holders, and stethoscope loops.</p>
+
+          <h3>TRADE MEDS 6sense Stethoscopes</h3>
+          <p>Building on our mission to provide complete solutions for medical professionals, the 6sense Stethoscope features aerospace-grade acoustic diaphragms for exceptional auscultation clarity, backed by a 30-day trial and 5-year replacement warranty.</p>
+        </div>
+
+        <button type="button" id="seo-toggle-btn" class="seo-toggle-btn">Read More ▼</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       19. NEWSLETTER SUBSCRIPTION SECTION
+       ========================================================== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2 class="newsletter-title">Subscribe to the TRADE MEDS Letter</h2>
+        <p class="newsletter-sub">Get early access to limited edition scrub colors, clinical style guides, and an instant <strong>12% OFF coupon</strong> on your first order.</p>
+
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your hospital or personal email..." required>
+          <button type="submit" class="newsletter-btn">Claim 12% Off</button>
+        </form>
+        <span style="font-size:0.75rem;color:var(--tm-text-secondary);">We respect your privacy. Zero spam, unsubscribe at any time.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       20. COMPLETE ENHANCED MEDICAL FOOTER
+       ========================================================== -->
+
+<!-- ==========================================================
+       COMPLETE ENHANCED MEDICAL FOOTER
+       ========================================================== -->
+<footer class="site-footer">
+    <!-- 1. Pre-Footer Trust Accreditations Strip -->
+    <div class="footer-trust-strip">
+      <div class="container">
+        <div class="footer-trust-grid">
+          <div class="footer-trust-card">
+            <div class="footer-trust-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div>
+              <div class="footer-trust-title">Free Express Shipping</div>
+              <div class="footer-trust-sub">Free Pan-India delivery on orders above ₹1,499 with live tracking updates.</div>
+            </div>
+          </div>
+
+          <div class="footer-trust-card">
+            <div class="footer-trust-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+            </div>
+            <div>
+              <div class="footer-trust-title">7-Day Easy Exchange</div>
+              <div class="footer-trust-sub">Hassle-free doorstep size swap &amp; reverse pickup across all pin codes.</div>
+            </div>
+          </div>
+
+          <div class="footer-trust-card">
+            <div class="footer-trust-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div>
+              <div class="footer-trust-title">Doctor Embroidery</div>
+              <div class="footer-trust-sub">High-precision CAD stitching for your name, qualification &amp; hospital badge.</div>
+            </div>
+          </div>
+
+          <div class="footer-trust-card">
+            <div class="footer-trust-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <div class="footer-trust-title">100+ Autoclave Washes</div>
+              <div class="footer-trust-sub">Engineered to withstand commercial hospital sterilization without fading.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Main 5-Column Navigation Grid -->
+    <div class="footer-main-section">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Clinical Heritage -->
+          <div class="footer-company-col">
+            <div class="footer-logo">
+              <img src="images/trade-meds-logo/trade-meds.png" alt="TRADE MEDS Logo">
+            </div>
+
+            <div class="footer-tagline-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>HEALTH TODAY... BETTER TOMORROW</span>
+            </div>
+
+            <p class="footer-company-desc">
+              India's premier medical apparel atelier engineered specifically for doctors, surgeons, nurses, and healthcare heroes. Crafted with poly-viscose breathability, 4-way stretch flex, and autoclave-shield technology.
+            </p>
+
+            <div class="footer-contact-links">
+              <a href="tel:+919840123456" class="footer-contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Helpline: <strong>+91 (044) 4800-MEDS</strong> (24/7 Support)</span>
+              </a>
+              <a href="mailto:support@trademeds.com" class="footer-contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Medical Concierge: <strong>support@trademeds.com</strong></span>
+              </a>
+              <a href="https://wa.me/919840123456" target="_blank" class="footer-contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span>WhatsApp Instant Hospital Desk: <strong>+91 98401 23456</strong></span>
+              </a>
+            </div>
+
+            <!-- Social Media Icon Buttons -->
+            <div class="footer-social-row">
+              <a href="https://instagram.com" target="_blank" class="footer-social-btn" title="Follow on Instagram" aria-label="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="footer-social-btn" title="Connect on LinkedIn" aria-label="LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" class="footer-social-btn" title="Facebook Page" aria-label="Facebook">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" class="footer-social-btn" title="YouTube Clinical Channel" aria-label="YouTube">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2: Shop Clinical Apparel -->
+          <div>
+            <h4 class="footer-col-title">Clinical Apparel</h4>
+            <ul class="footer-links">
+              <li><a href="#classic-scrubs-section">Women's Medical Scrubs <span class="link-badge">POPULAR</span></a></li>
+              <li><a href="#classic-scrubs-section">Men's Surgical Scrub Suits</a></li>
+              <li><a href="#ecoflex-section">ecoflex™ 4-Way Stretch <span class="link-badge" style="background:rgba(56,189,248,0.2);color:#38bdf8;border-color:rgba(56,189,248,0.3);">TECH</span></a></li>
+              <li><a href="#stethoscope-section">Doctor Lab Coats &amp; Aprons</a></li>
+              <li><a href="#stethoscope-section">6sense Precision Stethoscopes</a></li>
+              <li><a href="javascript:void(0)" onclick="window.TM.openQuickView(16)">Medical Footwear &amp; Clogs</a></li>
+              <li><a href="#categories-section">Drift Warm-Up Jackets</a></li>
+              <li><a href="#categories-section">Surgical Caps &amp; Underscrubs</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Hospital & Institutional Bulk Orders -->
+          <div>
+            <h4 class="footer-col-title">Hospital Solutions</h4>
+            <ul class="footer-links">
+              <li><a href="#bulk-banner">Hospital Group Orders <span class="link-badge">SAVE 25%</span></a></li>
+              <li><a href="#bulk-banner">Custom Doctor Monogramming</a></li>
+              <li><a href="#bulk-banner">Departmental Bulk Quotations</a></li>
+              <li><a href="#bulk-banner">Medical College Uniforms</a></li>
+              <li><a href="#bulk-banner">Clinic Starter Kits</a></li>
+              <li><a href="#hero-slider">Fabric Antimicrobial Testing</a></li>
+              <li><a href="#hero-slider">B2B Institutional Invoicing</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Doctor Care & Policy -->
+          <div>
+            <h4 class="footer-col-title">Doctor Support</h4>
+            <ul class="footer-links">
+              <li><a href="javascript:void(0)" onclick="window.TM.promptTrackOrder()">Track Consignment Live</a></li>
+              <li><a href="javascript:void(0)" onclick="window.TM.openSizeChart()">Size &amp; Measurement Guide</a></li>
+              <li><a href="javascript:void(0)" onclick="alert('7-Day Exchange: Contact support@trademeds.com or WhatsApp +91 98401 23456 for doorstep reverse pickup.');">7-Day Doorstep Reverse Pickup</a></li>
+              <li><a href="#stethoscope-section">Stethoscope 5-Year Warranty</a></li>
+              <li><a href="javascript:void(0)" onclick="alert('Autoclave Care: Machine wash at 60°C or commercial autoclave steam without bleach to retain fluid barrier.');">Autoclave &amp; Washing Care</a></li>
+              <li><a href="javascript:void(0)" onclick="alert('Breakpoint Helpline: Confidential 24/7 mental wellness support for on-call resident doctors.');">Breakpoint Medico Helpline</a></li>
+              <li><a href="javascript:void(0)" onclick="alert('Shipping Policy: Free expedited shipping above ₹1,499. Orders dispatched within 24 hours from Chennai.');">Shipping &amp; Delivery SLA</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 5: Company & Portals -->
+          <div>
+            <h4 class="footer-col-title">Company &amp; Ops</h4>
+            <ul class="footer-links">
+              <li><a href="#hero-slider">The TRADE MEDS Story</a></li>
+              <li><a href="#join-club">Vitals Medico Club (5% Back)</a></li>
+              <li><a href="#news-section">In The Clinical News</a></li>
+              <li><a href="javascript:void(0)" onclick="alert('Experience Stores: Flagship Doctor Experience Centers opening in Chennai, Mumbai, and New Delhi.');">Flagship Experience Stores</a></li>
+              <li><a href="javascript:void(0)" onclick="alert('Careers: Hiring Senior Textile Technologists & Clinical Product Evangelists. Email jobs@trademeds.com');">Careers in Med-Tech</a></li>
+            </ul>
+
+            <a href="admin/login.php" class="footer-admin-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>Admin Operations Portal</span>
+            </a>
+
+            <div style="margin-top:1.25rem;font-size:0.75rem;color:#64748b;line-height:1.5;">
+              CIN: U24239TN2026PTC109283<br>
+              ISO 9001:2015 &amp; CE Certified<br>
+              Serving India • UAE • UK
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Safe Payments & SSL Security Strip -->
+    <div class="footer-payments-bar">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;width:100%;">
+        <div class="payment-security-note">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span><strong>100% Secure 256-Bit SSL Encrypted Checkout</strong> • Verified Medical Commerce</span>
+        </div>
+
+        <div class="payment-badges-list">
+          <span class="pay-badge-pill">UPI</span>
+          <span class="pay-badge-pill">Google Pay</span>
+          <span class="pay-badge-pill">PhonePe</span>
+          <span class="pay-badge-pill">Paytm</span>
+          <span class="pay-badge-pill">RuPay</span>
+          <span class="pay-badge-pill">VISA</span>
+          <span class="pay-badge-pill">MasterCard</span>
+          <span class="pay-badge-pill">NetBanking</span>
+          <span class="pay-badge-pill" style="border-color:#10b981;color:#10b981;">COD Available</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Legal Compliance & Copyright Bottom Row -->
+    <div class="container">
+      <div class="footer-bottom-row">
+        <div>
+          &copy; 2026 <strong>TRADE MEDS</strong> (Trade Meds Healthcare Private Limited). All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="javascript:void(0)" onclick="alert('Privacy Policy: TRADE MEDS adheres strictly to DPDP Act 2023 and HIPAA-compliant data security.');">Privacy Policy</a>
+          <a href="javascript:void(0)" onclick="alert('Terms of Service: Standard clinical e-commerce conditions govern all transactions.');">Terms of Service</a>
+          <a href="javascript:void(0)" onclick="alert('Return Policy: 7 days reverse doorstep pickup or immediate store credit.');">Return Policy</a>
+          <a href="javascript:void(0)" onclick="alert('Medical Disclaimer: Products are non-sterile protective apparel designed for clinical use.');">Medical Disclaimer</a>
+          <a href="#hero-slider">Sitemap</a>
+        </div>
+        <div class="footer-medical-disclaimer">
+          Medical Attire Notice: TRADE MEDS® scrub suits, laboratory aprons, and 6sense clinical instruments are engineered to meet ISO 9001:2015 quality manufacturing benchmarks. All trademarks and brand names are property of Trade Meds Healthcare Private Limited.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Application Main JavaScript -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+<!-- Backdrop Overlay -->
+  <div id="drawer-backdrop" class="drawer-backdrop" onclick="window.TM.closeCartDrawer();window.TM.closeMobileMenu();"></div>
+
+  <!-- SLIDE-OVER SHOPPING CART DRAWER -->
+  <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping Cart Drawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span>Your Bag</span>
+        <span id="cart-drawer-count" style="font-size:0.9375rem;font-weight:500;color:var(--tm-text-secondary);">(0)</span>
+      </h3>
+      <button type="button" class="drawer-close-btn" onclick="window.TM.closeCartDrawer()" aria-label="Close Cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+
+    <!-- Free Delivery Progress Tracker -->
+    <div class="cart-shipping-bar">
+      <div class="shipping-bar-text" id="cart-shipping-text">Add <strong>₹1,499</strong> more to unlock <strong>FREE Delivery</strong>!</div>
+      <div class="shipping-progress-bg">
+        <div class="shipping-progress-fill" id="cart-shipping-progress" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div id="cart-empty-state" style="display:none;text-align:center;padding:4rem 1.5rem;">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--tm-text-light)" stroke-width="1.5" style="margin:0 auto 1rem;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <h4 style="font-size:1.125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.5rem;">Your bag is empty</h4>
+      <p style="font-size:0.875rem;color:var(--tm-text-secondary);margin-bottom:1.5rem;">Explore our best selling scrubs, doctor aprons, and stethoscopes.</p>
+      <button type="button" class="newsletter-btn" onclick="window.TM.closeCartDrawer()">Start Shopping</button>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div class="cart-items-body" id="cart-items-body"></div>
+
+    <!-- Cart Footer with Coupon & Checkout -->
+    <div class="cart-drawer-footer" id="cart-drawer-footer">
+      <div class="cart-coupon-row">
+        <input type="text" id="cart-coupon-input" class="cart-coupon-input" placeholder="Promo code (e.g. FLASH12)">
+        <button type="button" class="cart-coupon-btn" onclick="window.TM.applyCoupon()">Apply</button>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">₹0</span>
+      </div>
+      <div class="cart-summary-line" id="cart-discount-row" style="display:none;color:var(--tm-green);">
+        <span>Discount (Promo)</span>
+        <span id="cart-discount">-₹0</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Delivery Fee</span>
+        <span id="cart-shipping">Calculated</span>
+      </div>
+      <div class="cart-summary-line total">
+        <span>Estimated Total</span>
+        <span id="cart-total">₹0</span>
+      </div>
+
+      <button type="button" class="cart-checkout-btn" onclick="window.TM.checkout()">
+        <span>Proceed to Checkout</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- QUICK VIEW PRODUCT MODAL -->
+  <div id="quickview-modal" class="modal-overlay">
+    <div class="modal-box">
+      <button type="button" class="modal-close-btn" onclick="window.TM.closeModal('quickview-modal')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      <div id="quickview-content"></div>
+    </div>
+  </div>
+
+  <!-- WISHLIST MODAL -->
+  <div id="wishlist-modal" class="modal-overlay">
+    <div class="modal-box" style="max-width:760px;">
+      <div class="drawer-header">
+        <h3 class="drawer-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:var(--tm-red)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <span>Saved to Wishlist</span>
+        </h3>
+        <button type="button" class="modal-close-btn" onclick="window.TM.closeModal('wishlist-modal')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      </div>
+      <div id="wishlist-modal-body" style="padding:1.5rem;max-height:75vh;overflow-y:auto;"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       CUSTOMER AUTHENTICATION MODAL (2-OPTIONS)
+       Option 1: Email OTP Authentication
+       Option 2: Password Login / New Account Registration
+       ========================================== -->
+  <div id="auth-modal" class="modal-overlay">
+    <div class="modal-box" style="max-width:480px;padding:2.25rem;border-radius:var(--radius-lg);">
+      <button type="button" class="modal-close-btn" onclick="window.TM.closeModal('auth-modal')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      
+      <div style="text-align:center;margin-bottom:1.5rem;">
+        <img src="images/trade-meds-logo/trade-meds.png" style="height:42px;margin:0 auto 0.75rem;" alt="TRADE MEDS">
+        <h3 style="font-size:1.35rem;font-weight:800;color:var(--tm-primary);margin-bottom:0.25rem;">Healthcare Professional Portal</h3>
+        <p style="font-size:0.875rem;color:var(--tm-text-secondary);">Access orders, instant scrubs dispatch & clinical rewards</p>
+      </div>
+
+      <!-- Main Tabs: Log In vs Create Account vs Forgot Password -->
+      <div style="display:flex;border-bottom:2px solid var(--tm-border-light);margin-bottom:1.5rem;">
+        <button type="button" id="auth-tab-login" class="auth-tab-btn active" onclick="window.TM.switchAuthTab('login')" style="flex:1;padding:0.75rem 0.5rem;border:none;background:none;font-weight:700;font-size:0.9rem;cursor:pointer;color:var(--tm-primary);border-bottom:3px solid var(--tm-primary);">Log In</button>
+        <button type="button" id="auth-tab-register" class="auth-tab-btn" onclick="window.TM.switchAuthTab('register')" style="flex:1;padding:0.75rem 0.5rem;border:none;background:none;font-weight:600;font-size:0.9rem;cursor:pointer;color:var(--tm-text-muted);border-bottom:3px solid transparent;">Create Account</button>
+        <button type="button" id="auth-tab-forgot" class="auth-tab-btn" onclick="window.TM.switchAuthTab('forgot')" style="flex:1;padding:0.75rem 0.5rem;border:none;background:none;font-weight:600;font-size:0.9rem;cursor:pointer;color:var(--tm-text-muted);border-bottom:3px solid transparent;">Forgot Password</button>
+      </div>
+
+      <!-- PANEL 1: LOGIN (DIRECT EMAIL & PASSWORD) -->
+      <div id="auth-panel-login">
+        <form id="pass-login-form" onsubmit="window.TM.handlePasswordLogin(event)">
+          <div style="margin-bottom:1.15rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.4rem;">Hospital / Personal Email</label>
+            <input type="email" id="pass-login-email" class="newsletter-input" style="width:100%;border-radius:var(--radius-sm);" placeholder="doctor@hospital.com or yourname@gmail.com" required autocomplete="email">
+          </div>
+          <div style="margin-bottom:1.15rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.4rem;">
+              <label style="font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin:0;">Password</label>
+              <a href="javascript:void(0)" onclick="window.TM.switchAuthTab('forgot')" style="font-size:0.75rem;color:var(--tm-accent-blue);font-weight:600;text-decoration:none;">Forgot Password?</a>
+            </div>
+            <div style="position:relative;">
+              <input type="password" id="pass-login-pass" class="newsletter-input" style="width:100%;padding-right:42px;border-radius:var(--radius-sm);" placeholder="Enter your password" required autocomplete="current-password">
+              <button type="button" onclick="window.TM.togglePasswordVisibility('pass-login-pass', this)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--tm-text-muted);cursor:pointer;padding:6px;display:flex;align-items:center;" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.65rem;font-size:0.8125rem;">
+              <label style="display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--tm-text-secondary);font-size:0.8125rem;">
+                <input type="checkbox" id="pass-login-remember" checked style="accent-color:var(--tm-primary);cursor:pointer;">
+                <span>Remember Me</span>
+              </label>
+              <a href="javascript:void(0)" onclick="window.TM.switchAuthTab('register')" style="font-size:0.75rem;color:var(--tm-accent-blue);font-weight:600;text-decoration:none;">New here? Create Account</a>
+            </div>
+          </div>
+          <button type="submit" class="cart-checkout-btn" style="width:100%;height:46px;font-size:0.9375rem;font-weight:700;margin-top:0.5rem;">Sign In to Account</button>
+        </form>
+
+        <div style="margin-top:1.25rem;padding:0.75rem 1rem;background:#f8fafc;border:1px dashed var(--tm-border);border-radius:8px;display:flex;align-items:center;justify-content:space-between;">
+          <span style="font-size:0.75rem;color:var(--tm-text-secondary);">Demo Test Account:</span>
+          <button type="button" style="background:none;border:none;font-size:0.75rem;font-weight:700;color:var(--tm-accent-blue);cursor:pointer;text-decoration:underline;" onclick="document.getElementById('pass-login-email').value='doctor@hospital.com';document.getElementById('pass-login-pass').value='doctor123';">
+            Autofill Demo Doctor
+          </button>
+        </div>
+      </div>
+
+      <!-- PANEL 2: CREATE NEW ACCOUNT -->
+      <div id="auth-panel-register" style="display:none;">
+        <div id="reg-step1">
+          <div style="margin-bottom:0.85rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Full Name (with Dr. prefix if applicable)</label>
+            <input type="text" id="reg-name" class="newsletter-input" style="width:100%;border-radius:var(--radius-sm);" placeholder="Dr. Sarah Sharma" required>
+          </div>
+          <div style="margin-bottom:0.85rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Hospital / Personal Email</label>
+            <input type="email" id="reg-email" class="newsletter-input" style="width:100%;border-radius:var(--radius-sm);" placeholder="sarah.s@hospital.org" required>
+          </div>
+          <div style="margin-bottom:0.85rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Mobile Number</label>
+            <input type="tel" id="reg-phone" class="newsletter-input" style="width:100%;border-radius:var(--radius-sm);" placeholder="+91 98765 43210" required>
+          </div>
+          <div style="margin-bottom:0.85rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Create Account Password</label>
+            <div style="position:relative;">
+              <input type="password" id="reg-password" class="newsletter-input" style="width:100%;padding-right:42px;border-radius:var(--radius-sm);" placeholder="Minimum 6 characters" oninput="window.TM.checkPasswordStrength(this.value); window.TM.checkPasswordMatch();" required>
+              <button type="button" onclick="window.TM.togglePasswordVisibility('reg-password', this)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--tm-text-muted);cursor:pointer;padding:6px;display:flex;align-items:center;" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+            <!-- Live Password Strength Meter -->
+            <div style="margin-top:6px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;">
+                <span style="font-size:0.75rem;color:var(--tm-text-muted);">Password Strength:</span>
+                <span id="reg-strength-label" style="font-size:0.75rem;font-weight:700;color:var(--tm-text-muted);">None</span>
+              </div>
+              <div style="height:4px;width:100%;background:#e2e8f0;border-radius:2px;overflow:hidden;">
+                <div id="reg-strength-bar" style="height:100%;width:0%;background:#ef4444;transition:all 0.3s ease;"></div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Confirm Password</label>
+            <div style="position:relative;">
+              <input type="password" id="reg-confirm-password" class="newsletter-input" style="width:100%;padding-right:42px;border-radius:var(--radius-sm);" placeholder="Re-enter password" oninput="window.TM.checkPasswordMatch();" required>
+              <button type="button" onclick="window.TM.togglePasswordVisibility('reg-confirm-password', this)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--tm-text-muted);cursor:pointer;padding:6px;display:flex;align-items:center;" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+            <!-- Match Indicator -->
+            <div id="reg-match-msg" style="font-size:0.75rem;margin-top:5px;display:none;align-items:center;gap:4px;"></div>
+          </div>
+
+          <label style="display:flex;align-items:flex-start;gap:8px;font-size:0.75rem;color:var(--tm-text-secondary);margin-bottom:1.25rem;cursor:pointer;line-height:1.4;">
+            <input type="checkbox" id="reg-terms-check" checked style="margin-top:2px;accent-color:var(--tm-primary);cursor:pointer;">
+            <span>I verify that I am a healthcare professional or institutional clinical buyer and agree to TRADE MEDS Terms of Service.</span>
+          </label>
+
+          <button type="button" class="cart-checkout-btn" style="width:100%;" onclick="window.TM.requestRegisterOTP()">Verify Email &amp; Create Account</button>
+        </div>
+
+        <div id="reg-step2" style="display:none;">
+          <div style="background:#f0fdf4;border:1px solid #bbf7d0;padding:0.75rem 1rem;border-radius:8px;margin-bottom:1rem;font-size:0.8125rem;color:#166534;">
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:3px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verification OTP dispatched to: <strong id="reg-otp-dest-email"></strong></span>
+          </div>
+          <div style="margin-bottom:1.25rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.4rem;">Enter 6-Digit Email Code</label>
+            <input type="text" id="reg-otp-input" class="newsletter-input" style="width:100%;text-align:center;font-size:1.5rem;letter-spacing:6px;font-weight:800;border-radius:var(--radius-sm);" maxlength="6" placeholder="••••••">
+          </div>
+          <button type="button" class="cart-checkout-btn" style="width:100%;" onclick="window.TM.verifyRegisterOTP()">Verify &amp; Activate Account</button>
+        </div>
+      </div>
+
+      <!-- PANEL 3: FORGOT PASSWORD -->
+      <div id="auth-panel-forgot" style="display:none;">
+        <!-- Step 1: Request Reset Code -->
+        <div id="forgot-step1">
+          <div style="background:#eff6ff;border:1px solid #bfdbfe;padding:0.85rem 1rem;border-radius:8px;margin-bottom:1.25rem;display:flex;align-items:flex-start;gap:10px;">
+            <div style="color:var(--tm-accent-blue);flex-shrink:0;margin-top:2px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <div style="font-size:0.8125rem;color:#1e40af;line-height:1.45;">
+              Enter your registered healthcare or personal email. We will send a 6-digit reset code to restore your account.
+            </div>
+          </div>
+          <div style="margin-bottom:1.25rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.4rem;">Registered Email Address</label>
+            <input type="email" id="forgot-email-input" class="newsletter-input" style="width:100%;border-radius:var(--radius-sm);" placeholder="doctor@hospital.com" required>
+          </div>
+          <button type="button" class="cart-checkout-btn" style="width:100%;" onclick="window.TM.requestForgotPasswordOTP()">Send 6-Digit Reset Code</button>
+          <div style="text-align:center;margin-top:1rem;">
+            <a href="javascript:void(0)" onclick="window.TM.switchAuthTab('login')" style="font-size:0.8125rem;color:var(--tm-accent-blue);font-weight:600;text-decoration:none;">← Back to Log In</a>
+          </div>
+        </div>
+
+        <!-- Step 2: Enter Code & Set New Password -->
+        <div id="forgot-step2" style="display:none;">
+          <div style="background:#f0fdf4;border:1px solid #bbf7d0;padding:0.75rem 1rem;border-radius:8px;margin-bottom:1rem;font-size:0.8125rem;color:#166534;">
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:3px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Reset code sent to: <strong id="forgot-dest-email"></strong></span>
+            <a href="javascript:void(0)" onclick="window.TM.resetForgotPasswordStep()" style="color:var(--tm-accent-blue);margin-left:8px;font-size:0.75rem;font-weight:700;">Edit</a>
+          </div>
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.4rem;">Enter 6-Digit Reset Code</label>
+            <input type="text" id="forgot-otp-input" class="newsletter-input" style="width:100%;text-align:center;font-size:1.5rem;letter-spacing:6px;font-weight:800;border-radius:var(--radius-sm);" maxlength="6" placeholder="••••••">
+          </div>
+          <div style="margin-bottom:0.85rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">New Password</label>
+            <div style="position:relative;">
+              <input type="password" id="forgot-new-password" class="newsletter-input" style="width:100%;padding-right:42px;border-radius:var(--radius-sm);" placeholder="Minimum 6 characters" oninput="window.TM.checkForgotMatch();" required>
+              <button type="button" onclick="window.TM.togglePasswordVisibility('forgot-new-password', this)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--tm-text-muted);cursor:pointer;padding:6px;display:flex;align-items:center;" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+          </div>
+          <div style="margin-bottom:1.25rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Confirm New Password</label>
+            <div style="position:relative;">
+              <input type="password" id="forgot-confirm-password" class="newsletter-input" style="width:100%;padding-right:42px;border-radius:var(--radius-sm);" placeholder="Re-enter new password" oninput="window.TM.checkForgotMatch();" required>
+              <button type="button" onclick="window.TM.togglePasswordVisibility('forgot-confirm-password', this)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--tm-text-muted);cursor:pointer;padding:6px;display:flex;align-items:center;" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+            <div id="forgot-match-msg" style="font-size:0.75rem;margin-top:5px;display:none;align-items:center;gap:4px;"></div>
+          </div>
+          <button type="button" class="cart-checkout-btn" style="width:100%;" onclick="window.TM.verifyResetPassword()">Reset Password &amp; Log In</button>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.85rem;font-size:0.8125rem;">
+            <span id="forgot-timer-text" style="color:var(--tm-text-muted);">Resend code in <strong id="forgot-timer-count">60</strong>s</span>
+            <button type="button" id="forgot-resend-btn" style="display:none;background:none;border:none;color:var(--tm-accent-blue);font-weight:700;cursor:pointer;" onclick="window.TM.requestForgotPasswordOTP(true)">Resend Code</button>
+          </div>
+          <div style="text-align:center;margin-top:1rem;">
+            <a href="javascript:void(0)" onclick="window.TM.switchAuthTab('login')" style="font-size:0.8125rem;color:var(--tm-accent-blue);font-weight:600;text-decoration:none;">Cancel &amp; Return to Log In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       CUSTOMER ACCOUNT DASHBOARD MODAL
+       ========================================== -->
+  <div id="account-dashboard-modal" class="modal-overlay">
+    <div class="modal-box" style="max-width:720px;padding:2rem;border-radius:var(--radius-lg);">
+      <button type="button" class="modal-close-btn" onclick="window.TM.closeModal('account-dashboard-modal')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:1.25rem;border-bottom:1px solid var(--tm-border-light);margin-bottom:1.5rem;">
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <div style="width:48px;height:48px;border-radius:50%;background:var(--tm-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-weight:800;" id="cust-avatar">DR</div>
+          <div>
+            <h3 style="font-size:1.2rem;font-weight:800;color:var(--tm-primary);margin:0;" id="cust-name-display">Dr. Medico</h3>
+            <span style="font-size:0.8125rem;color:var(--tm-green);font-weight:600;"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:3px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Verified Healthcare Professional</span>
+          </div>
+        </div>
+        <button type="button" class="btn-secondary" style="font-size:0.8125rem;padding:6px 14px;color:#ef4444;display:inline-flex;align-items:center;" onclick="window.TM.logoutUser()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> Sign Out</button>
+      </div>
+
+      <!-- Account Sub-Tabs -->
+      <div style="display:flex;gap:0.75rem;margin-bottom:1.25rem;border-bottom:1px solid var(--tm-border-light);padding-bottom:0.75rem;">
+        <button type="button" class="cust-tab-pill active" id="cust-tab-btn-orders" onclick="window.TM.switchCustomerTab('orders')">My Orders & Tracking</button>
+        <button type="button" class="cust-tab-pill" id="cust-tab-btn-profile" onclick="window.TM.switchCustomerTab('profile')">Profile Details</button>
+      </div>
+
+      <!-- Tab: My Orders -->
+      <div id="cust-tab-orders">
+        <div id="cust-orders-list" style="max-height:50vh;overflow-y:auto;">
+          <!-- Dynamically loaded from api/orders.php?my_orders=1 -->
+        </div>
+      </div>
+
+      <!-- Tab: Profile Details -->
+      <div id="cust-tab-profile" style="display:none;">
+        <form id="cust-profile-form" onsubmit="window.TM.handleProfileUpdate(event)">
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Full Name</label>
+            <input type="text" id="cust-edit-name" class="newsletter-input" style="width:100%;border-radius:var(--radius-sm);" required>
+          </div>
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Email Address</label>
+            <input type="email" id="cust-edit-email" class="newsletter-input" style="width:100%;border-radius:var(--radius-sm);background:#f1f5f9;" readonly>
+          </div>
+          <div style="margin-bottom:1.25rem;">
+            <label style="display:block;font-size:0.8125rem;font-weight:700;color:var(--tm-primary);margin-bottom:0.35rem;">Mobile Number</label>
+            <input type="tel" id="cust-edit-phone" class="newsletter-input" style="width:100%;border-radius:var(--radius-sm);">
+          </div>
+          <button type="submit" class="cart-checkout-btn" style="width:100%;">Save Profile Changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       CHECKOUT MODAL (ADDRESS & PAYMENT GATEWAY)
+       ========================================== -->
+  <div id="checkout-modal" class="modal-overlay">
+    <div class="checkout-modal-box">
+      <button type="button" class="modal-close-btn" onclick="window.TM.closeModal('checkout-modal')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:1rem;border-bottom:1.5px solid var(--tm-border-light);">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="images/trade-meds-logo/trade-meds.png" style="height:34px;" alt="TRADE MEDS">
+          <div>
+            <h3 style="font-size:1.25rem;font-weight:800;color:var(--tm-primary);margin:0;">Clinical Order Checkout</h3>
+            <span style="font-size:0.75rem;color:var(--tm-green);font-weight:600;display:inline-flex;align-items:center;gap:4px;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              256-Bit SSL Encrypted &amp; HIPAA-Safe
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <form id="checkout-form" onsubmit="window.TM.submitOrder(event)">
+        <div class="checkout-grid">
+          <!-- Left Column: Shipping & Payment Details -->
+          <div>
+            <!-- Section 1: Doctor / Contact Info -->
+            <div class="checkout-section-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span>1. Contact &amp; Doctor Details</span>
+            </div>
+
+            <div class="checkout-row">
+              <div class="checkout-form-group">
+                <label class="checkout-label">Full Name / Doctor Title *</label>
+                <input type="text" id="chk-name" class="checkout-input" placeholder="e.g. Dr. Riya Sen" required>
+              </div>
+              <div class="checkout-form-group">
+                <label class="checkout-label">Mobile Phone Number *</label>
+                <input type="tel" id="chk-phone" class="checkout-input" placeholder="+91 98401 23456" pattern="[\+0-9\s-]{10,15}" required>
+              </div>
+            </div>
+
+            <div class="checkout-form-group">
+              <label class="checkout-label">Email Address (for Invoice &amp; Dispatch SLA) *</label>
+              <input type="email" id="chk-email" class="checkout-input" placeholder="doctor@hospital.in" required>
+            </div>
+
+            <!-- Section 2: Delivery Address -->
+            <div class="checkout-section-title" style="margin-top:1.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>2. Clinical Delivery Address</span>
+            </div>
+
+            <div class="checkout-row">
+              <div class="checkout-form-group">
+                <label class="checkout-label">Hospital / Clinic / Institute *</label>
+                <input type="text" id="chk-hospital" class="checkout-input" placeholder="e.g. Apollo Hospital / AIIMS Quarters" required>
+              </div>
+              <div class="checkout-form-group">
+                <label class="checkout-label">Flat / Room / Department No. *</label>
+                <input type="text" id="chk-flat" class="checkout-input" placeholder="e.g. Room 402, Dept of Surgery" required>
+              </div>
+            </div>
+
+            <div class="checkout-form-group">
+              <label class="checkout-label">Street / Area / Landmark *</label>
+              <input type="text" id="chk-street" class="checkout-input" placeholder="e.g. Greams Road, Thousand Lights" required>
+            </div>
+
+            <div class="checkout-row">
+              <div class="checkout-form-group">
+                <label class="checkout-label">City *</label>
+                <input type="text" id="chk-city" class="checkout-input" placeholder="Chennai" required>
+              </div>
+              <div class="checkout-form-group">
+                <label class="checkout-label">PIN Code *</label>
+                <input type="text" id="chk-pincode" class="checkout-input" placeholder="600006" pattern="[0-9]{6}" maxlength="6" required>
+              </div>
+            </div>
+
+            <div class="checkout-form-group">
+              <label class="checkout-label">State / Union Territory *</label>
+              <select id="chk-state" class="checkout-input" required>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Delhi">Delhi NCR</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Other State">Other State</option>
+              </select>
+            </div>
+
+            <!-- Section 3: Payment Method Selection -->
+            <div class="checkout-section-title" style="margin-top:1.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+              <span>3. Payment Method</span>
+            </div>
+
+            <div class="payment-options-grid">
+              <label class="payment-card-label">
+                <input type="radio" name="chk_payment" value="COD" checked onchange="window.TM.updatePaymentSelection(this)">
+                <div>
+                  <strong style="display:block;font-size:0.875rem;color:var(--tm-primary);">Cash on Delivery</strong>
+                  <span style="font-size:0.75rem;color:var(--tm-text-secondary);">Pay when package arrives</span>
+                </div>
+              </label>
+
+              <label class="payment-card-label">
+                <input type="radio" name="chk_payment" value="UPI" onchange="window.TM.updatePaymentSelection(this)">
+                <div>
+                  <strong style="display:block;font-size:0.875rem;color:var(--tm-primary);">Instant UPI / QR</strong>
+                  <span style="font-size:0.75rem;color:var(--tm-text-secondary);">GPay, PhonePe, Paytm</span>
+                </div>
+              </label>
+
+              <label class="payment-card-label">
+                <input type="radio" name="chk_payment" value="Card" onchange="window.TM.updatePaymentSelection(this)">
+                <div>
+                  <strong style="display:block;font-size:0.875rem;color:var(--tm-primary);">Credit / Debit Card</strong>
+                  <span style="font-size:0.75rem;color:var(--tm-text-secondary);">Visa, MasterCard, RuPay</span>
+                </div>
+              </label>
+
+              <label class="payment-card-label">
+                <input type="radio" name="chk_payment" value="NetBanking" onchange="window.TM.updatePaymentSelection(this)">
+                <div>
+                  <strong style="display:block;font-size:0.875rem;color:var(--tm-primary);">Net Banking</strong>
+                  <span style="font-size:0.75rem;color:var(--tm-text-secondary);">All Indian Scheduled Banks</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Right Column: Order Summary Review -->
+          <div>
+            <div class="checkout-summary-box">
+              <h4 style="font-size:1.05rem;font-weight:800;color:var(--tm-primary);margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;">
+                <span>Order Summary</span>
+                <span id="chk-item-count" style="font-size:0.8125rem;font-weight:600;color:var(--tm-text-secondary);">(0 items)</span>
+              </h4>
+
+              <!-- Items List -->
+              <div class="checkout-items-list" id="chk-items-list">
+                <!-- Dynamically rendered from state.cart.items -->
+              </div>
+
+              <!-- Promo Code in Checkout -->
+              <div style="display:flex;gap:0.5rem;margin-bottom:1.25rem;">
+                <input type="text" id="chk-coupon-input" class="checkout-input" placeholder="Promo code (e.g. DOCTOR10)" style="height:38px;font-size:0.8125rem;text-transform:uppercase;">
+                <button type="button" class="btn-secondary" style="height:38px;padding:0 14px;font-size:0.8125rem;font-weight:700;" onclick="window.TM.applyCheckoutCoupon()">Apply</button>
+              </div>
+
+              <!-- Price Breakdown -->
+              <div style="display:flex;flex-direction:column;gap:0.6rem;font-size:0.875rem;padding:0.75rem 0;border-top:1px solid var(--tm-border-light);border-bottom:1px solid var(--tm-border-light);">
+                <div style="display:flex;justify-content:space-between;color:var(--tm-text-secondary);">
+                  <span>Items Subtotal</span>
+                  <span id="chk-subtotal" style="font-weight:600;color:var(--tm-primary);">₹0</span>
+                </div>
+                <div id="chk-discount-row" style="display:none;justify-content:space-between;color:var(--tm-green);">
+                  <span id="chk-discount-label">Promo Discount</span>
+                  <span id="chk-discount" style="font-weight:700;">-₹0</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:var(--tm-text-secondary);">
+                  <span>Expedited Delivery</span>
+                  <span id="chk-shipping" style="font-weight:600;">Calculated</span>
+                </div>
+              </div>
+
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:1rem 0;font-size:1.15rem;font-weight:800;color:var(--tm-primary);">
+                <span>Total Payable:</span>
+                <span id="chk-total" style="color:var(--tm-primary);">₹0</span>
+              </div>
+
+              <button type="submit" class="cart-checkout-btn" style="width:100%;height:48px;" id="chk-submit-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Confirm &amp; Place Order</span>
+              </button>
+
+              <div style="margin-top:1rem;text-align:center;font-size:0.71875rem;color:var(--tm-text-secondary);line-height:1.4;">
+                By placing your order, you agree to TRADE MEDS standard clinical terms and 7-day doorstep size exchange policy.
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       ORDER SUCCESS CONFIRMATION MODAL
+       ========================================== -->
+  <div id="order-success-modal" class="modal-overlay">
+    <div class="order-success-modal-box">
+      <button type="button" class="modal-close-btn" onclick="window.TM.closeModal('order-success-modal')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+
+      <div class="success-check-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+
+      <h3 style="font-size:1.5rem;font-weight:800;color:var(--tm-primary);margin-bottom:0.35rem;">Order Placed Successfully!</h3>
+      <p style="font-size:0.875rem;color:var(--tm-text-secondary);margin-bottom:1.5rem;">Thank you for your order with TRADE MEDS. Your medical apparel is being tailored &amp; prepped for dispatch.</p>
+
+      <div style="background:#f8fafc;border:1.5px solid var(--tm-border-light);border-radius:12px;padding:1.25rem;text-align:left;margin-bottom:1.5rem;font-size:0.875rem;">
+        <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid var(--tm-border-light);margin-bottom:0.75rem;">
+          <span style="color:var(--tm-text-secondary);">Order Reference:</span>
+          <strong id="success-order-num" style="color:var(--tm-primary);letter-spacing:0.02em;">TM-2026-XXXX</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+          <span style="color:var(--tm-text-secondary);">Customer:</span>
+          <strong id="success-customer-name">Dr. Medico</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+          <span style="color:var(--tm-text-secondary);">Payment Mode:</span>
+          <span id="success-payment-mode" style="font-weight:700;">Cash on Delivery</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+          <span style="color:var(--tm-text-secondary);">Delivery Address:</span>
+          <span id="success-address" style="text-align:right;max-width:260px;font-weight:600;">—</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding-top:0.75rem;border-top:1px solid var(--tm-border-light);font-size:1rem;font-weight:800;">
+          <span>Total Amount:</span>
+          <span id="success-total" style="color:#059669;">₹0</span>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:0.75rem;">
+        <button type="button" class="btn-secondary" style="flex:1;height:44px;" onclick="window.TM.trackSuccessOrder()">Track Order</button>
+        <button type="button" class="cart-checkout-btn" style="flex:1;height:44px;" onclick="window.TM.closeModal('order-success-modal')">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <div class="mobile-drawer-header">
+      <img src="images/trade-meds-logo/trade-meds.png" style="height:32px;" alt="TRADE MEDS">
+      <button type="button" class="drawer-close-btn" onclick="window.TM.closeMobileMenu()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+
+    <!-- Mobile Search -->
+    <div style="padding:0.75rem 1.25rem;background:var(--tm-bg-gray);">
+      <div class="search-input-wrapper" style="height:38px;padding-left:2.25rem;">
+        <svg class="search-icon" style="left:0.75rem;width:16px;height:16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="mobile-search-input" class="search-input" placeholder="Search scrubs, coats..." style="font-size:0.875rem;">
+      </div>
+    </div>
+
+    <!-- Mobile Tabs: Women, Men, All -->
+    <div class="mobile-tabs">
+      <button type="button" class="mobile-tab-btn active" onclick="this.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('active'));this.classList.add('active');">Women</button>
+      <button type="button" class="mobile-tab-btn" onclick="this.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('active'));this.classList.add('active');">Men</button>
+      <button type="button" class="mobile-tab-btn" onclick="this.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('active'));this.classList.add('active');">Equipment</button>
+    </div>
+
+    <!-- Mobile Category Links -->
+    <div class="mobile-menu-body">
+      <div class="mobile-category-item">
+        <a href="#classic-scrubs-section" class="mobile-category-link" onclick="window.TM.closeMobileMenu()">
+          <span>Classic Scrubs</span>
+          <span>›</span>
+        </a>
+      </div>
+      <div class="mobile-category-item">
+        <a href="#ecoflex-section" class="mobile-category-link" onclick="window.TM.closeMobileMenu()">
+          <span>ecoflex™ 4-Way Stretch</span>
+          <span>›</span>
+        </a>
+      </div>
+      <div class="mobile-category-item">
+        <a href="javascript:void(0)" class="mobile-category-link" onclick="window.TM.closeMobileMenu();window.TM.openQuickView(11)">
+          <span>Lab Coats &amp; Aprons</span>
+          <span>›</span>
+        </a>
+      </div>
+      <div class="mobile-category-item">
+        <a href="#stethoscope-section" class="mobile-category-link" onclick="window.TM.closeMobileMenu()">
+          <span>6sense Stethoscopes</span>
+          <span>›</span>
+        </a>
+      </div>
+      <div class="mobile-category-item">
+        <a href="javascript:void(0)" class="mobile-category-link" onclick="window.TM.closeMobileMenu();window.TM.openQuickView(16)">
+          <span>Medical Footwear Clogs</span>
+          <span>›</span>
+        </a>
+      </div>
+      <div class="mobile-category-item">
+        <a href="#bulk-banner" class="mobile-category-link" onclick="window.TM.closeMobileMenu()">
+          <span>Hospital Bulk Order</span>
+          <span>›</span>
+        </a>
+      </div>
+      <div class="mobile-category-item">
+        <a href="#join-club" class="mobile-category-link" onclick="window.TM.closeMobileMenu()">
+          <span>TRADE MEDS Club Rewards</span>
+          <span>›</span>
+        </a>
+      </div>
+
+      <!-- Account in Mobile -->
+      <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--tm-border);">
+        <button type="button" class="cart-checkout-btn" style="height:42px;font-size:0.9375rem;" onclick="window.TM.closeMobileMenu();window.TM.openModal('auth-modal');">
+          Log In / Sign Up
+        </button>
+        <p style="text-align:center;font-size:0.75rem;color:var(--tm-text-secondary);margin-top:0.75rem;">
+          Need help? Call +91 (044) 4800-MEDS
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       SIZE & MEASUREMENT FIT GUIDE MODAL
+       ========================================== -->
+  <div id="size-guide-modal" class="modal-overlay">
+    <div class="modal-box" style="max-width:760px;padding:2rem;border-radius:var(--radius-lg);">
+      <button type="button" class="modal-close-btn" onclick="window.TM.closeModal('size-guide-modal')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1.5px solid var(--tm-border-light);">
+        <div style="width:40px;height:40px;border-radius:10px;background:#f0f9ff;color:#0284c7;display:flex;align-items:center;justify-content:center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.3 8.7l-6-6a1 1 0 0 0-1.4 0l-11 11a1 1 0 0 0 0 1.4l6 6a1 1 0 0 0 1.4 0l11-11a1 1 0 0 0 0-1.4z"></path><path d="M7.5 10.5l2 2"></path><path d="M10.5 7.5l2 2"></path><path d="M13.5 4.5l2 2"></path></svg>
+        </div>
+        <div>
+          <h3 style="font-size:1.35rem;font-weight:800;color:var(--tm-primary);margin:0;">Clinical Size &amp; Measurement Guide</h3>
+          <p style="font-size:0.8125rem;color:var(--tm-text-secondary);margin:2px 0 0 0;">Engineered for 12-hour hospital mobility. All sizes in standard Indian doctor proportions.</p>
+        </div>
+      </div>
+
+      <!-- Unit Selector Tabs -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <span style="font-size:0.8125rem;font-weight:700;color:var(--tm-primary);">Body &amp; Garment Measurements</span>
+        <div style="display:inline-flex;border:1px solid var(--tm-border);border-radius:8px;overflow:hidden;">
+          <button type="button" id="size-unit-in" class="cust-tab-pill active" style="border:none;border-radius:0;padding:4px 12px;font-size:0.75rem;" onclick="window.TM.switchSizeUnit('in')">Inches (in)</button>
+          <button type="button" id="size-unit-cm" class="cust-tab-pill" style="border:none;border-radius:0;padding:4px 12px;font-size:0.75rem;" onclick="window.TM.switchSizeUnit('cm')">Centimeters (cm)</button>
+        </div>
+      </div>
+
+      <!-- Sizing Table -->
+      <div style="overflow-x:auto;margin-bottom:1.5rem;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.875rem;text-align:center;">
+          <thead>
+            <tr style="background:#f8fafc;border-bottom:2px solid var(--tm-border-light);color:var(--tm-primary);">
+              <th style="padding:10px 14px;text-align:left;font-weight:800;">Size</th>
+              <th style="padding:10px 14px;font-weight:800;">Chest / Bust</th>
+              <th style="padding:10px 14px;font-weight:800;">Waist</th>
+              <th style="padding:10px 14px;font-weight:800;">Hip</th>
+              <th style="padding:10px 14px;font-weight:800;">Top Length</th>
+              <th style="padding:10px 14px;font-weight:800;">Pant Inseam</th>
+            </tr>
+          </thead>
+          <tbody id="size-chart-tbody">
+            <!-- Populated dynamically via JS -->
+            <tr style="border-bottom:1px solid var(--tm-border-light);">
+              <td style="padding:10px 14px;text-align:left;font-weight:800;color:var(--tm-primary);">XS</td>
+              <td style="padding:10px 14px;">32 - 34"</td>
+              <td style="padding:10px 14px;">26 - 28"</td>
+              <td style="padding:10px 14px;">34 - 36"</td>
+              <td style="padding:10px 14px;">26"</td>
+              <td style="padding:10px 14px;">29"</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--tm-border-light);background:#fcfcfd;">
+              <td style="padding:10px 14px;text-align:left;font-weight:800;color:var(--tm-primary);">S</td>
+              <td style="padding:10px 14px;">35 - 37"</td>
+              <td style="padding:10px 14px;">29 - 31"</td>
+              <td style="padding:10px 14px;">37 - 39"</td>
+              <td style="padding:10px 14px;">27"</td>
+              <td style="padding:10px 14px;">29.5"</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--tm-border-light);">
+              <td style="padding:10px 14px;text-align:left;font-weight:800;color:var(--tm-primary);">M</td>
+              <td style="padding:10px 14px;">38 - 40"</td>
+              <td style="padding:10px 14px;">32 - 34"</td>
+              <td style="padding:10px 14px;">40 - 42"</td>
+              <td style="padding:10px 14px;">28"</td>
+              <td style="padding:10px 14px;">30"</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--tm-border-light);background:#fcfcfd;">
+              <td style="padding:10px 14px;text-align:left;font-weight:800;color:var(--tm-primary);">L</td>
+              <td style="padding:10px 14px;">41 - 43"</td>
+              <td style="padding:10px 14px;">35 - 37"</td>
+              <td style="padding:10px 14px;">43 - 45"</td>
+              <td style="padding:10px 14px;">29"</td>
+              <td style="padding:10px 14px;">30.5"</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--tm-border-light);">
+              <td style="padding:10px 14px;text-align:left;font-weight:800;color:var(--tm-primary);">XL</td>
+              <td style="padding:10px 14px;">44 - 46"</td>
+              <td style="padding:10px 14px;">38 - 40"</td>
+              <td style="padding:10px 14px;">46 - 48"</td>
+              <td style="padding:10px 14px;">30"</td>
+              <td style="padding:10px 14px;">31"</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--tm-border-light);background:#fcfcfd;">
+              <td style="padding:10px 14px;text-align:left;font-weight:800;color:var(--tm-primary);">2XL</td>
+              <td style="padding:10px 14px;">47 - 50"</td>
+              <td style="padding:10px 14px;">41 - 44"</td>
+              <td style="padding:10px 14px;">49 - 52"</td>
+              <td style="padding:10px 14px;">31"</td>
+              <td style="padding:10px 14px;">31.5"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Fit Note -->
+      <div style="background:#f0fdf4;border:1px solid #bbf7d0;padding:0.85rem 1.25rem;border-radius:10px;font-size:0.8125rem;color:#166534;line-height:1.5;">
+        <strong>Hassle-Free Exchange:</strong> If the fit isn't 100% perfect, enjoy our free 7-Day doorstep size exchange across India. WhatsApp us or exchange in 1 click from your account dashboard.
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Main JavaScript -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
