@@ -1,7 +1,7 @@
 -- ==========================================================
 -- TRADE MEDS - Complete MySQL Database Export
--- Generated for Hostinger MySQL Deployment
--- Target Database: u974680833_trademeds
+-- Generated for Remote MySQL Deployment
+-- Target Database: if0_43520184_trademeds
 -- ==========================================================
 
 SET FOREIGN_KEY_CHECKS = 0;

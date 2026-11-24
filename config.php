@@ -58,12 +58,12 @@ if (!isset($_SESSION['session_token'])) {
 }
 $sessionToken = $_SESSION['session_token'];
 
-// Database configuration (Hostinger MySQL with automatic SQLite fallback)
-define('DB_DRIVER', 'mysql'); // 'mysql' on Hostinger, falls back to 'sqlite' if offline or local
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'u974680833_trademeds');
-define('DB_USER', 'u974680833_trademeds');
-define('DB_PASS', 'Trademeds@123');
+// Database configuration (MySQL with automatic SQLite fallback)
+define('DB_DRIVER', 'mysql');
+define('DB_HOST', 'sql310.infinityfree.com');
+define('DB_NAME', 'if0_43520184_trademeds');
+define('DB_USER', 'if0_43520184');
+define('DB_PASS', 'hi6kmM969fV');
 define('DB_PORT', '3306');
 
 /**
